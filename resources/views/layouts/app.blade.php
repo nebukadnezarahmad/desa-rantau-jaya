@@ -109,7 +109,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 
-                <div class="flex-shrink-0 flex items-center gap-3 group cursor-pointer smooth-spring hover:-translate-y-0.5">
+                <a href="{{ route('beranda') }}" class="flex-shrink-0 flex items-center gap-3 group smooth-spring hover:-translate-y-0.5" aria-label="Beranda Desa Rantau Jaya">
                     <div class="w-10 h-10 bg-gradient-to-br from-yellow-300 to-yellow-500 text-emerald-950 flex items-center justify-center rounded-full font-black text-sm shadow-[0_4px_15px_rgb(250,204,21,0.4)] smooth-spring group-hover:rotate-12 group-hover:scale-110">
                         DRJ
                     </div>
@@ -117,7 +117,7 @@
                         <span class="text-white font-black text-lg tracking-wide leading-none group-hover:text-yellow-400 transition-colors">Desa Rantau Jaya</span>
                         <span class="text-emerald-300 text-[10px] uppercase tracking-widest font-bold mt-0.5">Kecamatan Makmur</span>
                     </div>
-                </div>
+                </a>
 
                 <div class="hidden md:flex relative items-center py-2" id="nav-menu">
                     
@@ -151,7 +151,23 @@
                     </a>
                 </div>
 
+                <div class="md:hidden">
+                    <button type="button" id="btn-mobile-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="Buka menu navigasi"
+                        class="text-white p-2.5 rounded-xl border border-white/20 bg-white/10">
+                        <svg id="icon-menu-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                        <svg id="icon-menu-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
             </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden border-t border-emerald-800/50 bg-emerald-950/95 backdrop-blur-lg px-4 pt-2 pb-6">
+            <a href="{{ route('beranda') }}" class="block px-4 py-3 rounded-xl font-bold {{ request()->routeIs('beranda') ? 'text-yellow-400 bg-white/10' : 'text-emerald-50/90' }}">Beranda</a>
+            <a href="{{ route('profil') }}" class="block px-4 py-3 rounded-xl font-bold {{ request()->routeIs('profil') ? 'text-yellow-400 bg-white/10' : 'text-emerald-50/90' }}">Profil</a>
+            <a href="{{ route('umkm') }}" class="block px-4 py-3 rounded-xl font-bold {{ request()->routeIs('umkm') ? 'text-yellow-400 bg-white/10' : 'text-emerald-50/90' }}">UMKM</a>
+            <a href="{{ route('penduduk') }}" class="block px-4 py-3 rounded-xl font-bold {{ request()->routeIs('penduduk') ? 'text-yellow-400 bg-white/10' : 'text-emerald-50/90' }}">Data Penduduk</a>
+            <a href="{{ route('berita.semua') }}" class="block px-4 py-3 rounded-xl font-bold {{ request()->routeIs('berita.semua') ? 'text-yellow-400 bg-white/10' : 'text-emerald-50/90' }}">Berita</a>
+            <a href="{{ route('kontak') }}" class="block px-4 py-3 mt-2 rounded-xl font-bold text-center bg-yellow-400 text-emerald-950">Layanan Pengaduan</a>
         </div>
     </nav>
 
@@ -212,6 +228,38 @@
                 } else {
                     indicator.style.opacity = '0';
                 }
+            });
+
+            // --- 1.2 MENU MOBILE (R-03/R-32): tombol sungguhan, bisa keyboard + Escape ---
+            const btnMobile = document.getElementById('btn-mobile-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const iconOpen = document.getElementById('icon-menu-open');
+            const iconClose = document.getElementById('icon-menu-close');
+
+            function setMobileMenu(open) {
+                if (!btnMobile || !mobileMenu) return;
+                mobileMenu.classList.toggle('hidden', !open);
+                btnMobile.setAttribute('aria-expanded', open ? 'true' : 'false');
+                btnMobile.setAttribute('aria-label', open ? 'Tutup menu navigasi' : 'Buka menu navigasi');
+                if (iconOpen) iconOpen.classList.toggle('hidden', open);
+                if (iconClose) iconClose.classList.toggle('hidden', !open);
+            }
+
+            if (btnMobile) {
+                btnMobile.addEventListener('click', () => {
+                    setMobileMenu(mobileMenu.classList.contains('hidden'));
+                });
+            }
+
+            // Escape menutup modal berita dan menu mobile (R-32)
+            document.addEventListener('keydown', (e) => {
+                if (e.key !== 'Escape') return;
+                const modal = document.getElementById('beritaModal');
+                if (modal && !modal.classList.contains('hidden')) {
+                    const closeBtn = modal.querySelector('.modal-tutup');
+                    if (closeBtn) closeBtn.click();
+                }
+                setMobileMenu(false);
             });
 
 
@@ -351,6 +399,7 @@
 
                     e.preventDefault();
                     try {
+                        setMobileMenu(false);
                         window.history.pushState(null, null, link.href);
                         loadPage(link.href);
                     } catch (err) {
@@ -399,7 +448,7 @@
                         <p class="text-xs font-medium text-gray-500 leading-relaxed pr-2">{{ $toastMessage }}</p>
                     </div>
 
-                    <button onclick="closeToast()" class="text-gray-400 hover:text-gray-800 transition p-1 bg-gray-50 hover:bg-gray-100 rounded-lg">
+                    <button onclick="closeToast()" class="text-gray-500 hover:text-gray-800 transition p-1 bg-gray-50 hover:bg-gray-100 rounded-lg">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
                     </button>
                 </div>

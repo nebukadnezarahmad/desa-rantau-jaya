@@ -15,8 +15,16 @@ class PageController extends Controller
     {
         // Mengambil 3 berita terbaru dari database
         $berita_terbaru = \App\Models\Berita::latest()->take(3)->get();
-        
-        return view('welcome', compact('berita_terbaru'));
+
+        // Statistik ringkas dari sumber yang sama dengan halaman Data Penduduk,
+        // plus hitungan nyata produk UMKM agar hero tidak menampilkan klaim statis.
+        $statistik = [
+            'total_penduduk' => 3450,
+            'kepala_keluarga' => 980,
+        ];
+        $jumlah_umkm = \App\Models\Umkm::count();
+
+        return view('welcome', compact('berita_terbaru', 'statistik', 'jumlah_umkm'));
     }
 
     // 2. Halaman Profil Desa

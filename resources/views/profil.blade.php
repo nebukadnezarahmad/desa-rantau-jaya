@@ -39,9 +39,6 @@
     <div class="absolute -bottom-20 right-1/4 w-[500px] h-[500px] bg-yellow-500/10 blur-[100px] pointer-events-none animate-blob" style="animation-delay: -5s; animation-direction: reverse;"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 text-center z-10 animate-entrance" style="animation-delay: 0.1s;">
-        <div class="inline-flex items-center justify-center bg-white/5 backdrop-blur-md border border-white/10 text-yellow-400 text-[10px] font-black uppercase tracking-[0.2em] px-4 py-1.5 rounded-full mb-6 shadow-xl cursor-default smooth-spring hover:scale-105 hover:bg-white/10">
-            Identitas Daerah
-        </div>
         <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4 transition-all duration-500 hover:tracking-normal">
             Profil Desa <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500">Rantau Jaya</span>
         </h1>

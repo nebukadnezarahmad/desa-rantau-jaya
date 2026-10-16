@@ -29,11 +29,6 @@
     <div class="absolute -bottom-40 -left-20 w-[600px] h-[600px] bg-yellow-500/30 blur-[80px] animate-morph" style="animation-delay: -5s;"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 text-center z-10">
-        <div class="inline-flex items-center justify-center bg-white/5 backdrop-blur-md border border-white/10 text-yellow-400 text-xs font-black uppercase tracking-[0.2em] px-5 py-2 rounded-full mb-8 shadow-2xl smooth-spring hover:scale-105 hover:bg-white/10 cursor-default">
-            <span class="w-2 h-2 rounded-full bg-yellow-400 mr-2 animate-pulse"></span>
-            Portal Resmi Pemerintahan
-        </div>
-        
         <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight leading-[1.1]">
             Selamat Datang di <br>
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-100 to-white drop-shadow-sm">
@@ -60,23 +55,23 @@
     <div class="bg-white/80 backdrop-blur-xl rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white p-4 md:p-8 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center divide-x divide-gray-100 smooth-spring hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)]">
         
         <div class="p-4 group smooth-spring hover:-translate-y-2 hover:scale-105 cursor-default">
-            <div class="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-emerald-700 to-emerald-950 mb-1">3.450+</div>
-            <div class="text-[11px] font-bold text-gray-400 uppercase tracking-widest group-hover:text-emerald-600 smooth-spring">Total Penduduk</div>
+            <div class="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-emerald-700 to-emerald-950 mb-1">{{ number_format($statistik['total_penduduk'], 0, ',', '.') }}+</div>
+            <div class="text-[11px] font-bold text-gray-500 uppercase tracking-widest group-hover:text-emerald-600 smooth-spring">Total Penduduk</div>
         </div>
         
         <div class="p-4 group smooth-spring hover:-translate-y-2 hover:scale-105 cursor-default">
-            <div class="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-emerald-700 to-emerald-950 mb-1">980+</div>
-            <div class="text-[11px] font-bold text-gray-400 uppercase tracking-widest group-hover:text-emerald-600 smooth-spring">Kepala Keluarga</div>
+            <div class="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-emerald-700 to-emerald-950 mb-1">{{ number_format($statistik['kepala_keluarga'], 0, ',', '.') }}+</div>
+            <div class="text-[11px] font-bold text-gray-500 uppercase tracking-widest group-hover:text-emerald-600 smooth-spring">Kepala Keluarga</div>
         </div>
         
         <div class="p-4 group smooth-spring hover:-translate-y-2 hover:scale-105 cursor-default">
             <div class="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-emerald-700 to-emerald-950 mb-1">3</div>
-            <div class="text-[11px] font-bold text-gray-400 uppercase tracking-widest group-hover:text-emerald-600 smooth-spring">Wilayah Dusun</div>
+            <div class="text-[11px] font-bold text-gray-500 uppercase tracking-widest group-hover:text-emerald-600 smooth-spring">Wilayah Dusun</div>
         </div>
         
         <div class="p-4 group smooth-spring hover:-translate-y-2 hover:scale-105 cursor-default">
-            <div class="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-yellow-500 to-yellow-600 mb-1">Aktif</div>
-            <div class="text-[11px] font-bold text-gray-400 uppercase tracking-widest group-hover:text-yellow-600 smooth-spring">Lapak UMKM</div>
+            <div class="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-yellow-500 to-yellow-600 mb-1">{{ number_format($jumlah_umkm, 0, ',', '.') }}</div>
+            <div class="text-[11px] font-bold text-gray-500 uppercase tracking-widest group-hover:text-yellow-600 smooth-spring">Produk UMKM</div>
         </div>
 
     </div>

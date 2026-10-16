@@ -43,9 +43,6 @@
     <div class="absolute -bottom-20 left-1/4 w-[500px] h-[500px] bg-yellow-500/10 blur-[100px] pointer-events-none animate-blob" style="animation-delay: -5s; animation-direction: reverse;"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 text-center z-10 animate-entrance" style="animation-delay: 0.1s;">
-        <div class="inline-flex items-center justify-center bg-white/5 backdrop-blur-md border border-white/10 text-yellow-400 text-[10px] font-black uppercase tracking-[0.2em] px-4 py-1.5 rounded-full mb-6 shadow-xl cursor-default smooth-spring hover:scale-105 hover:bg-white/10">
-            Layanan Publik Interaktif
-        </div>
         <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4 transition-all duration-500 hover:tracking-normal">
             Pusat Pengaduan <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500">Warga</span>
         </h1>
@@ -61,7 +58,7 @@
         <div class="lg:col-span-4 space-y-6">
             <div class="bg-white/90 backdrop-blur-xl p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white smooth-spring hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] animate-entrance" style="animation-delay: 0.2s;">
                 <h3 class="text-2xl font-black text-emerald-950 mb-1">Hubungi Kami</h3>
-                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-8">Informasi Kontak Resmi</p>
+                <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-8">Informasi Kontak Resmi</p>
                 
                 <div class="space-y-6">
                     <!-- Widget Alamat -->
@@ -70,7 +67,7 @@
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                         </div>
                         <div>
-                            <span class="block text-[10px] font-black text-gray-400 uppercase tracking-widest">Alamat Kantor Desa</span>
+                            <span class="block text-[10px] font-black text-gray-500 uppercase tracking-widest">Alamat Kantor Desa</span>
                             <p class="text-sm font-semibold text-gray-700 mt-1">Jl. Lintas Desa No. 01, Rantau Jaya, Kecamatan Makmur</p>
                         </div>
                     </div>
@@ -81,7 +78,7 @@
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                         </div>
                         <div>
-                            <span class="block text-[10px] font-black text-gray-400 uppercase tracking-widest">Surat Elektronik (Email)</span>
+                            <span class="block text-[10px] font-black text-gray-500 uppercase tracking-widest">Surat Elektronik (Email)</span>
                             <p class="text-sm font-bold text-emerald-600 mt-1">pemdes@rantaujaya.id</p>
                         </div>
                     </div>
@@ -92,7 +89,7 @@
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                         </div>
                         <div>
-                            <span class="block text-[10px] font-black text-gray-400 uppercase tracking-widest">Hotline / WhatsApp</span>
+                            <span class="block text-[10px] font-black text-gray-500 uppercase tracking-widest">Hotline / WhatsApp</span>
                             <p class="text-sm font-bold text-gray-700 mt-1">021-12345678</p>
                         </div>
                     </div>
@@ -118,7 +115,7 @@
 
                 <!-- Notifikasi Sukses Kirim Data -->
                 @if(session('sukses'))
-                    <div class="bg-emerald-50 border border-emerald-200 text-emerald-700 px-5 py-4 rounded-2xl mb-8 text-sm font-semibold flex items-center gap-3 shadow-sm smooth-spring animate-bounce">
+                    <div class="bg-emerald-50 border border-emerald-200 text-emerald-700 px-5 py-4 rounded-2xl mb-8 text-sm font-semibold flex items-center gap-3 shadow-sm smooth-spring">
                         <div class="bg-emerald-500 text-white p-1 rounded-full">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
                         </div>
@@ -182,10 +179,6 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center mb-12 animate-entrance" style="animation-delay: 0.5s;">
-            <div class="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-100 text-emerald-700 text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg mb-4">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                Transparansi Publik
-            </div>
             <h3 class="text-3xl md:text-4xl font-black text-emerald-950">Pantau Progres Aduan</h3>
             <p class="text-sm font-medium text-gray-500 mt-3 max-w-2xl mx-auto">Kami berkomitmen untuk menindaklanjuti setiap laporan yang masuk. Berikut adalah status riwayat aspirasi yang telah diajukan warga.</p>
         </div>
@@ -194,7 +187,7 @@
             <div class="overflow-x-auto">
                 <table class="w-full text-left border-collapse">
                     <thead>
-                        <tr class="bg-gray-50/80 border-b border-gray-100 text-[11px] font-black uppercase tracking-widest text-gray-400">
+                        <tr class="bg-gray-50/80 border-b border-gray-100 text-[11px] font-black uppercase tracking-widest text-gray-500">
                             <th class="px-6 py-5 text-center w-16 rounded-tl-2xl">No</th>
                             <th class="px-6 py-5">Identitas Pelapor</th>
                             <th class="px-6 py-5">Kategori</th>
@@ -206,13 +199,13 @@
                         @forelse($laporan_warga as $index => $laporan)
                             <!-- Baris Tabel dengan Animasi Staggered yang Dihitung Otomatis Berdasarkan Index -->
                             <tr class="hover:bg-gray-50/50 smooth-spring group animate-entrance" style="animation-delay: {{ 0.7 + ($index * 0.1) }}s;">
-                                <td class="px-6 py-6 text-center font-bold text-gray-300">{{ $index + 1 }}</td>
+                                <td class="px-6 py-6 text-center font-bold text-gray-500">{{ $index + 1 }}</td>
                                 <td class="px-6 py-6">
                                     <div class="font-black text-emerald-950 flex items-center gap-2">
                                         <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
                                         {{ Str::words($laporan->nama, 1, ' ***') }}
                                     </div>
-                                    <div class="text-[10px] font-bold text-gray-400 mt-1.5 uppercase tracking-wider pl-6">{{ $laporan->created_at->format('d M Y') }}</div>
+                                    <div class="text-[10px] font-bold text-gray-500 mt-1.5 uppercase tracking-wider pl-6">{{ $laporan->created_at->format('d M Y') }}</div>
                                 </td>
                                 <td class="px-6 py-6">
                                     <span class="px-2.5 py-1 text-[10px] font-black rounded-lg uppercase tracking-wider inline-block
@@ -233,7 +226,7 @@
                                         {{ $laporan->status == 'Selesai' ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : '' }}">
                                         <span class="w-1.5 h-1.5 rounded-full 
                                             {{ $laporan->status == 'Pending' ? 'bg-yellow-500' : '' }}
-                                            {{ $laporan->status == 'Diproses' ? 'bg-blue-500 animate-pulse' : '' }}
+                                            {{ $laporan->status == 'Diproses' ? 'bg-blue-500' : '' }}
                                             {{ $laporan->status == 'Selesai' ? 'bg-emerald-500' : '' }}"></span>
                                         {{ $laporan->status }}
                                     </span>
@@ -242,11 +235,11 @@
                         @empty
                             <tr>
                                 <td colspan="5" class="px-6 py-16 text-center bg-gray-50/30">
-                                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 text-gray-400">
+                                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 text-gray-500">
                                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                                     </div>
                                     <h3 class="text-sm font-black text-gray-500 uppercase tracking-widest">Aman Terkendali</h3>
-                                    <p class="text-xs font-medium text-gray-400 mt-1">Belum ada riwayat laporan yang masuk atau ditampilkan.</p>
+                                    <p class="text-xs font-medium text-gray-500 mt-1">Belum ada riwayat laporan yang masuk atau ditampilkan.</p>
                                 </td>
                             </tr>
                         @endforelse

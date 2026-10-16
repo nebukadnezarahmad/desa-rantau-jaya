@@ -59,7 +59,7 @@
                     </div>
                     <div>
                         <h3 class="text-lg font-black text-emerald-950">Publikasi Berita</h3>
-                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Tulis Kabar Desa</p>
+                        <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Tulis Kabar Desa</p>
                     </div>
                 </div>
 
@@ -111,7 +111,7 @@
                     </div>
                     <div>
                         <h3 class="text-lg font-black text-emerald-950">Pendaftaran UMKM</h3>
-                        <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Daftar Produk Warga</p>
+                        <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Daftar Produk Warga</p>
                     </div>
                 </div>
 
@@ -163,12 +163,8 @@
                 
                 <div class="mb-8 flex flex-col xl:flex-row justify-between items-start xl:items-end gap-4">
                     <div>
-                        <div class="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-100 text-emerald-700 text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg mb-3">
-                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                            Live Update
-                        </div>
                         <h2 class="text-2xl font-black text-emerald-950">Aspirasi & Laporan Warga</h2>
-                        <p class="text-sm font-medium text-gray-500 mt-1">Total <span class="font-bold text-emerald-600">{{ $semua_pengaduan->count() }}</span> berkas masuk menunggu ditindaklanjuti.</p>
+                        <p class="text-sm font-medium text-gray-500 mt-1">Total <span class="font-bold text-emerald-600">{{ $semua_pengaduan->count() }}</span> berkas aspirasi warga tercatat dalam sistem.</p>
                     </div>
                     
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 w-full xl:w-auto">
@@ -192,7 +188,7 @@
                 <div class="overflow-x-auto rounded-2xl border border-gray-100 bg-white">
                     <table class="w-full text-left border-collapse">
                         <thead>
-                            <tr class="bg-gray-50/80 border-b border-gray-100 text-[11px] font-black uppercase tracking-widest text-gray-400">
+                            <tr class="bg-gray-50/80 border-b border-gray-100 text-[11px] font-black uppercase tracking-widest text-gray-500">
                                 <th class="px-5 py-4 text-center w-12 rounded-tl-2xl">No</th>
                                 <th class="px-5 py-4">Data Pelapor</th>
                                 <th class="px-6 py-4">Isi Aspirasi</th>
@@ -203,10 +199,10 @@
                             <tbody class="divide-y divide-gray-50 text-sm text-gray-600">
                                 @forelse($semua_pengaduan as $index => $item)
                                     <tr id="row-{{ $item->id }}" class="hover:bg-gray-50/50 transition-colors duration-200 group">
-                                        <td class="px-5 py-5 text-center font-bold text-gray-300">{{ $index + 1 }}</td>
+                                        <td class="px-5 py-5 text-center font-bold text-gray-500">{{ $index + 1 }}</td>
                                         <td class="px-5 py-5">
                                             <div class="font-black text-emerald-950">{{ $item->nama }}</div>
-                                            <div class="text-[11px] font-bold text-gray-400 mt-1 uppercase tracking-wider">{{ $item->created_at->format('d M Y') }}</div>
+                                            <div class="text-[11px] font-bold text-gray-500 mt-1 uppercase tracking-wider">{{ $item->created_at->format('d M Y') }}</div>
                                         </td>
                                         
                                         <td class="px-6 py-5 max-w-xs md:max-w-md cursor-pointer group/detail btn-detail relative"
@@ -242,7 +238,7 @@
                                                 {{ $item->status == 'Selesai' ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : '' }}">
                                                 <span class="w-1.5 h-1.5 rounded-full transition-colors duration-300
                                                     {{ $item->status == 'Pending' ? 'bg-yellow-500' : '' }}
-                                                    {{ $item->status == 'Diproses' ? 'bg-blue-500 animate-pulse' : '' }}
+                                                    {{ $item->status == 'Diproses' ? 'bg-blue-500' : '' }}
                                                     {{ $item->status == 'Selesai' ? 'bg-emerald-500' : '' }}"></span>
                                                 {{ $item->status }}
                                             </span>
@@ -282,11 +278,11 @@
                                 @empty
                                     <tr>
                                         <td colspan="5" class="px-6 py-16 text-center bg-gray-50/30">
-                                            <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 text-gray-400">
+                                            <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 text-gray-500">
                                                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                                             </div>
                                             <h3 class="text-sm font-black text-gray-500 uppercase tracking-widest">Kosong</h3>
-                                            <p class="text-xs font-medium text-gray-400 mt-1">Belum ada laporan pengaduan yang masuk dari warga.</p>
+                                            <p class="text-xs font-medium text-gray-500 mt-1">Belum ada laporan pengaduan yang masuk dari warga.</p>
                                         </td>
                                     </tr>
                                 @endforelse
@@ -309,7 +305,7 @@
                 <svg class="w-5 h-5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                 Detail Laporan Warga
             </h3>
-            <button type="button" class="text-gray-400 hover:text-red-500 hover:bg-red-50 p-2 rounded-xl transition-colors modal-close-btn">
+            <button type="button" class="text-gray-500 hover:text-red-500 hover:bg-red-50 p-2 rounded-xl transition-colors modal-close-btn">
                 <svg class="w-5 h-5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
         </div>
@@ -317,7 +313,7 @@
         <div class="px-6 py-5 overflow-y-auto">
             <div class="flex justify-between items-start mb-6">
                 <div>
-                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Identitas Pelapor</p>
+                    <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Identitas Pelapor</p>
                     <p class="font-black text-emerald-950 text-base" id="modalNama">-</p>
                     <p class="text-xs font-bold text-gray-500 mt-0.5" id="modalTanggal">-</p>
                 </div>
@@ -329,7 +325,7 @@
             </div>
 
             <div>
-                <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Isi Aspirasi Lengkap</p>
+                <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">Isi Aspirasi Lengkap</p>
                 <div class="bg-gray-50 rounded-2xl p-5 border border-gray-100">
                     <p class="text-sm text-gray-700 leading-relaxed whitespace-pre-line" id="modalIsi">-</p>
                 </div>

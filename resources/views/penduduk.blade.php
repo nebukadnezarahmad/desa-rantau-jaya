@@ -50,9 +50,6 @@
     <div class="absolute bottom-0 right-1/4 w-[600px] h-[400px] bg-blue-500/10 blur-[100px] pointer-events-none animate-blob" style="animation-delay: -5s; animation-direction: reverse;"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 text-center z-10 animate-fade-up" style="animation-delay: 0.1s;">
-        <div class="inline-flex items-center justify-center bg-white/5 backdrop-blur-md border border-white/10 text-emerald-300 text-[10px] font-bold uppercase tracking-[0.2em] px-4 py-1.5 rounded-full mb-6">
-            Transparansi Data Publik
-        </div>
         <h1 class="text-4xl md:text-5xl font-black tracking-tight leading-tight mb-4">
             Demografi & Profil Penduduk
         </h1>
@@ -74,7 +71,7 @@
                 <div class="text-3xl md:text-4xl font-black text-gray-800 mb-1">
                     {{ number_format($statistik['total_penduduk'], 0, ',', '.') }}
                 </div>
-                <div class="text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-widest mt-2">
+                <div class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-widest mt-2">
                     Total Penduduk
                 </div>
             </div>
@@ -87,7 +84,7 @@
                 <div class="text-3xl md:text-4xl font-black text-gray-800 mb-1">
                     {{ number_format($statistik['kepala_keluarga'], 0, ',', '.') }}
                 </div>
-                <div class="text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-widest mt-2">
+                <div class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-widest mt-2">
                     Kepala Keluarga
                 </div>
             </div>
@@ -100,7 +97,7 @@
                 <div class="text-3xl md:text-4xl font-black text-gray-800 mb-1">
                     {{ number_format($statistik['pria'], 0, ',', '.') }}
                 </div>
-                <div class="text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-widest mt-2">
+                <div class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-widest mt-2">
                     Penduduk Pria
                 </div>
             </div>
@@ -113,7 +110,7 @@
                 <div class="text-3xl md:text-4xl font-black text-gray-800 mb-1">
                     {{ number_format($statistik['wanita'], 0, ',', '.') }}
                 </div>
-                <div class="text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-widest mt-2">
+                <div class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-widest mt-2">
                     Penduduk Wanita
                 </div>
             </div>
@@ -183,8 +180,8 @@
                     </div>
                 </div>
                 
-                <div class="mt-8 pt-5 border-t border-gray-100 flex gap-3 text-xs text-gray-400 leading-relaxed ml-4">
-                    <svg class="w-4 h-4 flex-shrink-0 text-gray-300 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <div class="mt-8 pt-5 border-t border-gray-100 flex gap-3 text-xs text-gray-500 leading-relaxed ml-4">
+                    <svg class="w-4 h-4 flex-shrink-0 text-gray-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     <p>Data disinkronisasikan berdasarkan pelaporan berkala dari masing-masing Ketua RT dan Kepala Dusun.</p>
                 </div>
             </div>

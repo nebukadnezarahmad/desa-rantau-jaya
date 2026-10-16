@@ -43,10 +43,6 @@
     <div class="absolute -bottom-20 right-1/4 w-[500px] h-[500px] bg-yellow-500/10 blur-[100px] pointer-events-none animate-blob" style="animation-delay: -5s; animation-direction: reverse;"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 text-center z-10 animate-entrance" style="animation-delay: 0.1s;">
-        <div class="inline-flex items-center justify-center bg-white/5 backdrop-blur-md border border-white/10 text-yellow-400 text-[10px] font-black uppercase tracking-[0.2em] px-4 py-1.5 rounded-full mb-6 shadow-xl cursor-default smooth-spring hover:scale-105 hover:bg-white/10">
-            <span class="w-1.5 h-1.5 rounded-full bg-yellow-400 mr-2 animate-pulse"></span>
-            Pusat Ekonomi Warga
-        </div>
         <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4 transition-all duration-500 hover:tracking-normal">
             Lapak UMKM <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500">Rantau Jaya</span>
         </h1>
@@ -111,7 +107,7 @@
             @empty
                 <!-- Tampilan Menarik jika Lapak Masih Kosong -->
                 <div class="col-span-1 md:col-span-2 lg:col-span-3 text-center py-32 bg-white rounded-[2rem] border border-dashed border-gray-300 shadow-sm smooth-spring hover:scale-[1.01] animate-entrance" style="animation-delay: 0.3s;">
-                    <div class="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 text-gray-300">
+                    <div class="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 text-gray-500">
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
                     </div>
                     <h3 class="text-2xl font-black text-emerald-950 mb-2">Lapak UMKM Belum Tersedia</h3>
