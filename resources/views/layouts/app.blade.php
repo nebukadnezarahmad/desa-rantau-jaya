@@ -350,8 +350,14 @@
                     if (link.href.includes("logout") || link.getAttribute("target") === "_blank" || link.hasAttribute("download") || link.classList.contains("btn-baca-berita")) return;
 
                     e.preventDefault();
-                    window.history.pushState(null, null, link.href);
-                    loadPage(link.href);
+                    try {
+                        window.history.pushState(null, null, link.href);
+                        loadPage(link.href);
+                    } catch (err) {
+                        // Fallback: navigasi biasa jika pushState/SPA gagal
+                        // (mis. beda skema http vs https)
+                        window.location.href = link.href;
+                    }
                 }
             });
 
