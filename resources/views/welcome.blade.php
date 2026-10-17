@@ -83,7 +83,6 @@
     <div class="max-w-6xl mx-auto px-4">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
             <div>
-                <div class="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 text-amber-700 text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg mb-4">Contoh</div>
                 <h2 class="text-3xl md:text-4xl font-black text-emerald-950 tracking-tight">Layanan Administrasi</h2>
                 <p class="text-gray-500 font-medium text-sm md:text-base mt-2 max-w-xl">Urus surat langsung ke kantor desa pada jam pelayanan. Bawa syarat berikut agar sekali datang langsung jadi.</p>
             </div>
@@ -128,7 +127,6 @@
 <div class="bg-emerald-950 py-20 md:py-24 relative overflow-hidden reveal">
     <div class="absolute -top-32 right-0 w-[500px] h-[500px] bg-emerald-500/20 blur-[100px] pointer-events-none"></div>
     <div class="max-w-4xl mx-auto px-4 relative z-10">
-        <div class="inline-flex items-center gap-2 bg-amber-400/15 border border-amber-400/30 text-amber-300 text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg mb-4">Contoh</div>
         <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight mb-2">Pengumuman Desa</h2>
         <p class="text-emerald-100/70 text-sm font-medium mb-10">Informasi resmi yang sedang berlaku untuk warga.</p>
 
@@ -140,7 +138,7 @@
                 </div>
                 <div>
                     <h3 class="font-black text-white text-lg leading-snug">Penyaluran Bantuan Pangan Tahap III</h3>
-                    <p class="text-emerald-100/70 text-sm font-medium mt-1.5 leading-relaxed">Penerima manfaat dimohon hadir ke balai desa pukul 09.00 dengan membawa KTP dan KK asli. Contoh pengumuman, jadwal menyusul.</p>
+                    <p class="text-emerald-100/70 text-sm font-medium mt-1.5 leading-relaxed">Penerima manfaat dimohon hadir ke balai desa pukul 09.00 dengan membawa KTP dan KK asli.</p>
                 </div>
             </div>
             <div class="flex gap-5 bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-6 smooth-spring hover:bg-white/10">
@@ -150,7 +148,7 @@
                 </div>
                 <div>
                     <h3 class="font-black text-white text-lg leading-snug">Kerja Bakti Membersihkan Saluran Air</h3>
-                    <p class="text-emerald-100/70 text-sm font-medium mt-1.5 leading-relaxed">Seluruh warga Dusun II dimohon membawa cangkul dan karung. Titik kumpul di depan musala. Contoh pengumuman.</p>
+                    <p class="text-emerald-100/70 text-sm font-medium mt-1.5 leading-relaxed">Seluruh warga Dusun II dimohon membawa cangkul dan karung. Titik kumpul di depan musala.</p>
                 </div>
             </div>
         </div>
@@ -209,7 +207,6 @@
     <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-6 md:gap-8 items-stretch">
         <div class="bg-emerald-950 rounded-[2rem] p-8 md:p-10 relative overflow-hidden flex flex-col justify-center">
             <div class="absolute -bottom-24 -right-24 w-[350px] h-[350px] bg-yellow-500/20 blur-[90px] pointer-events-none"></div>
-            <div class="inline-flex items-center gap-2 self-start bg-amber-400/15 border border-amber-400/30 text-amber-300 text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg mb-5">Contoh</div>
             <h2 class="text-3xl font-black text-white tracking-tight mb-2">Kontak Darurat Desa</h2>
             <p class="text-emerald-100/70 text-sm font-medium mb-8">Dihubungi pada jam pelayanan. Di luar jam kerja, datang langsung ke pos jaga.</p>
             <div class="space-y-4 relative z-10">
