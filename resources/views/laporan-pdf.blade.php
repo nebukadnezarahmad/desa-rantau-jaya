@@ -90,8 +90,8 @@
 
     <!-- KOP SURAT RESMI -->
     <div class="kop-surat">
-        <h1>Pemerintah Kabupaten Makmur</h1>
-        <h1>Kecamatan Makmur</h1>
+        <h1>Pemerintah Kabupaten Ogan Komering Ulu Timur</h1>
+        <h1>Kecamatan Belitang Madang Raya</h1>
         <h2>Desa Rantau Jaya</h2>
         <p>Jl. Lintas Desa No. 01, Rantau Jaya, Kode Pos: 30123. Email: pemdes@rantaujaya.id</p>
         <div class="garis-tipis"></div>

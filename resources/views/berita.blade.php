@@ -40,18 +40,18 @@
     <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center opacity-10 mix-blend-screen"></div>
     <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-900/80 to-transparent"></div>
     
-    <div class="absolute -top-20 left-1/4 w-[600px] h-[600px] bg-emerald-500/20 blur-[100px] pointer-events-none animate-blob"></div>
-    <div class="absolute -bottom-20 right-1/4 w-[500px] h-[500px] bg-yellow-500/10 blur-[100px] pointer-events-none animate-blob" style="animation-delay: -5s; animation-direction: reverse;"></div>
+    <div class="absolute -top-20 left-1/4 w-[600px] h-[600px] bg-emerald-500/20 blur-[100px] pointer-events-none"></div>
+    <div class="absolute -bottom-20 right-1/4 w-[500px] h-[500px] bg-yellow-500/10 blur-[100px] pointer-events-none" style="animation-delay: -5s; animation-direction: reverse;"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 text-center z-10 animate-entrance" style="animation-delay: 0.1s;">
-        <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4 transition-all duration-500 hover:tracking-normal">
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4">
             Arsip Kabar <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500">Desa</span>
         </h1>
         <p class="text-base md:text-lg text-emerald-100/70 max-w-2xl mx-auto font-medium leading-relaxed">Kumpulan informasi resmi, liputan kegiatan, dan transparansi perkembangan terbaru di Desa Rantau Jaya.</p>
     </div>
 </div>
 
-<div class="bg-gray-50 py-16 relative border-t border-gray-100">
+<div class="bg-gray-50 py-16 relative border-t border-gray-100 reveal">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 -mt-24">
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -106,7 +106,7 @@
                 </div>
             @empty
                 <div class="col-span-1 md:col-span-2 lg:col-span-3 text-center py-32 bg-white rounded-[2rem] border border-dashed border-gray-300 shadow-sm smooth-spring hover:scale-[1.01] animate-entrance" style="animation-delay: 0.3s;">
-                    <div class="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 text-gray-500 transition-all duration-700 group-hover:rotate-180">
+                    <div class="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 text-gray-500 transition-all duration-700">
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
                     </div>
                     <h3 class="text-2xl font-black text-emerald-950 mb-2">Belum Ada Arsip Berita</h3>

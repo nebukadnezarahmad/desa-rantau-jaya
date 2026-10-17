@@ -22,10 +22,7 @@
         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
             
             <div class="flex items-center gap-3 py-2">
-                <span class="flex h-3 w-3 relative">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-3 w-3 bg-yellow-500"></span>
-                </span>
+                <span class="inline-flex rounded-full h-3 w-3 bg-yellow-500"></span>
                 <span class="text-xs font-black text-emerald-200 uppercase tracking-widest drop-shadow-md">Sistem Admin Berjalan</span>
             </div>
 

@@ -43,7 +43,13 @@
             height: calc(100vh - 80px); /* Sisa tinggi layar ke bawah */
             z-index: 998; /* Aman di bawah kasta navbar (999) */
             pointer-events: none;
-            overflow: hidden; 
+            overflow: hidden;
+            /* Disembunyikan saat idle agar tidak membebani repaint browser
+               saat scroll (sumber flicker); hanya tampil saat transisi halaman */
+            visibility: hidden;
+        }
+        #liquid-container.liquid-active {
+            visibility: visible;
         }
 
         /* CAIRAN GELOMBANGNYA (z-998 agar mengalah dari navbar z-999) */
@@ -77,7 +83,26 @@
             transition-duration: 500ms;
             transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
         }
+
+        /* Scroll reveal: section muncul saat discroll ke viewport (MOTION 2).
+           Tujuan: menuntun perhatian mengikuti urutan baca, bukan dekorasi loop.
+           Opacity-only (tanpa transform) agar backdrop-blur di dalamnya
+           tidak gugur di Safari selama transisi. */
+        .reveal {
+            opacity: 0;
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-visible {
+            opacity: 1;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal {
+                opacity: 1;
+                transition: none;
+            }
+        }
     </style>
+    <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
 
     <style>
         @keyframes toast-enter {
@@ -115,7 +140,7 @@
                     </div>
                     <div class="flex flex-col">
                         <span class="text-white font-black text-lg tracking-wide leading-none group-hover:text-yellow-400 transition-colors">Desa Rantau Jaya</span>
-                        <span class="text-emerald-300 text-[10px] uppercase tracking-widest font-bold mt-0.5">Kecamatan Makmur</span>
+                        <span class="text-emerald-300 text-[10px] uppercase tracking-widest font-bold mt-0.5">Belitang Madang Raya</span>
                     </div>
                 </a>
 
@@ -230,6 +255,21 @@
                 }
             });
 
+            // --- 1.3 SCROLL REVEAL: munculkan section saat masuk viewport ---
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('reveal-visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+            function observeReveals(root = document) {
+                root.querySelectorAll('.reveal:not(.reveal-visible)').forEach((el) => revealObserver.observe(el));
+            }
+            observeReveals();
+
             // --- 1.2 MENU MOBILE (R-03/R-32): tombol sungguhan, bisa keyboard + Escape ---
             const btnMobile = document.getElementById('btn-mobile-menu');
             const mobileMenu = document.getElementById('mobile-menu');
@@ -317,9 +357,11 @@
             // --- 2. LOGIKA PERPINDAHAN HALAMAN ANTI-GLITCH (SPA) ---
             const contentContainer = document.getElementById("page-content");
             const liquidOverlay = document.getElementById("liquid-overlay");
+            const liquidContainer = document.getElementById("liquid-container");
 
             const loadPage = async (url) => {
-                // Animasi Keluar
+                // Animasi Keluar (aktifkan layer cairan hanya selama transisi)
+                if (liquidContainer) liquidContainer.classList.add("liquid-active");
                 contentContainer.classList.add("morph-out");
                 liquidOverlay.classList.add("sweep-up");
 
@@ -338,6 +380,7 @@
 
                     // Terapkan Konten Baru (KITA TIDAK MENGHANCURKAN NAVBAR LAGI)
                     contentContainer.innerHTML = newContent;
+                    observeReveals(contentContainer);
                     if (newTitle) document.title = newTitle;
                     window.scrollTo({ top: 0, behavior: 'instant' });
 
@@ -377,9 +420,10 @@
                     contentContainer.classList.remove("morph-out");
 
                     setTimeout(() => {
-                        // Reset cairan ke bawah secara diam-diam
+                        // Reset cairan ke bawah secara diam-diam + matikan layer agar scroll bersih
                         liquidOverlay.style.transition = "none";
                         liquidOverlay.classList.remove("sweep-out");
+                        if (liquidContainer) liquidContainer.classList.remove("liquid-active");
                         void liquidOverlay.offsetWidth; // Reflow
                         liquidOverlay.style.transition = ""; 
                     }, 800);

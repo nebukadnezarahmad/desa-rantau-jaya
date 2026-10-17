@@ -39,11 +39,11 @@
     <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-900/80 to-transparent"></div>
     
     <!-- Ornamen Glow Estetik Latar Belakang dengan Animasi Morph Murni CSS -->
-    <div class="absolute -top-20 right-1/4 w-[600px] h-[600px] bg-emerald-500/20 blur-[100px] pointer-events-none animate-blob"></div>
-    <div class="absolute -bottom-20 left-1/4 w-[500px] h-[500px] bg-yellow-500/10 blur-[100px] pointer-events-none animate-blob" style="animation-delay: -5s; animation-direction: reverse;"></div>
+    <div class="absolute -top-20 right-1/4 w-[600px] h-[600px] bg-emerald-500/20 blur-[100px] pointer-events-none"></div>
+    <div class="absolute -bottom-20 left-1/4 w-[500px] h-[500px] bg-yellow-500/10 blur-[100px] pointer-events-none" style="animation-delay: -5s; animation-direction: reverse;"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 text-center z-10 animate-entrance" style="animation-delay: 0.1s;">
-        <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4 transition-all duration-500 hover:tracking-normal">
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4">
             Pusat Pengaduan <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500">Warga</span>
         </h1>
         <p class="text-base md:text-lg text-emerald-100/70 max-w-2xl mx-auto font-medium leading-relaxed">Sampaikan aspirasi, keluhan, atau kritik membangun secara aman dan transparan demi kemajuan bersama Desa Rantau Jaya.</p>
@@ -51,7 +51,7 @@
 </div>
 
 <!-- ================= GRID KONTEN UTAMA (BENTO STYLE) ================= -->
-<div class="bg-gray-50 py-12 relative border-t border-gray-100">
+<div class="bg-gray-50 py-12 relative border-t border-gray-100 reveal">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-8 relative z-10 -mt-24">
         
         <!-- === SEBELAH KIRI (4 KOLOM): WIDGET KONTAK KANTOR === -->
@@ -68,7 +68,7 @@
                         </div>
                         <div>
                             <span class="block text-[10px] font-black text-gray-500 uppercase tracking-widest">Alamat Kantor Desa</span>
-                            <p class="text-sm font-semibold text-gray-700 mt-1">Jl. Lintas Desa No. 01, Rantau Jaya, Kecamatan Makmur</p>
+                            <p class="text-sm font-semibold text-gray-700 mt-1">Jl. Lintas Desa No. 01, Rantau Jaya, Belitang Madang Raya, OKU Timur</p>
                         </div>
                     </div>
 
@@ -175,7 +175,7 @@
 </div>
 
 <!-- ================= SECTION TRACKING PROGRES ADUAN ================= -->
-<div class="bg-white py-20 border-t border-gray-100">
+<div class="bg-white py-20 border-t border-gray-100 reveal">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center mb-12 animate-entrance" style="animation-delay: 0.5s;">

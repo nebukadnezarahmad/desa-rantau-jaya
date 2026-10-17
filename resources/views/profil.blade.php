@@ -35,18 +35,18 @@
     <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center opacity-10 mix-blend-screen"></div>
     <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-900/80 to-transparent"></div>
     
-    <div class="absolute -top-20 left-1/4 w-[600px] h-[600px] bg-emerald-500/20 blur-[100px] pointer-events-none animate-blob"></div>
-    <div class="absolute -bottom-20 right-1/4 w-[500px] h-[500px] bg-yellow-500/10 blur-[100px] pointer-events-none animate-blob" style="animation-delay: -5s; animation-direction: reverse;"></div>
+    <div class="absolute -top-20 left-1/4 w-[600px] h-[600px] bg-emerald-500/20 blur-[100px] pointer-events-none"></div>
+    <div class="absolute -bottom-20 right-1/4 w-[500px] h-[500px] bg-yellow-500/10 blur-[100px] pointer-events-none" style="animation-delay: -5s; animation-direction: reverse;"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 text-center z-10 animate-entrance" style="animation-delay: 0.1s;">
-        <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4 transition-all duration-500 hover:tracking-normal">
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4">
             Profil Desa <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500">Rantau Jaya</span>
         </h1>
         <p class="text-base md:text-lg text-emerald-100/70 max-w-2xl mx-auto font-medium leading-relaxed">Mengenal lebih dekat sejarah, struktur kepengurusan, dan cakupan wilayah administrasi kebanggaan masyarakat Rantau Jaya.</p>
     </div>
 </div>
 
-<div class="bg-gray-50 py-16 relative border-t border-gray-100">
+<div class="bg-gray-50 py-16 relative border-t border-gray-100 reveal">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 -mt-24">
         
         <div class="grid lg:grid-cols-12 gap-8 items-stretch">
@@ -66,19 +66,18 @@
                 </div>
             </div>
 
-            <div class="lg:col-span-5 h-[300px] lg:h-auto bg-emerald-900 rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] relative group animate-entrance" style="animation-delay: 0.3s;">
-                <img src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&q=80&w=1000" alt="Kantor Desa Rantau Jaya" class="w-full h-full object-cover smooth-spring group-hover:scale-110 group-hover:rotate-1">
-                <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/90 via-emerald-950/20 to-transparent"></div>
-                <div class="absolute bottom-6 left-6 right-6">
-                    <span class="inline-block bg-yellow-400 text-emerald-950 text-[10px] font-black tracking-widest uppercase px-3 py-1.5 rounded-lg mb-2 shadow-md">Fasilitas Publik</span>
-                    <h3 class="text-white font-bold text-lg">Balai Desa Rantau Jaya</h3>
-                </div>
+            <!-- TODO: ganti dengan foto asli Balai Desa Rantau Jaya -->
+            <div class="lg:col-span-5 min-h-[300px] lg:h-auto bg-emerald-900 rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] relative group flex flex-col items-center justify-center text-center p-10">
+                <div class="w-20 h-20 rounded-full bg-yellow-400 text-emerald-950 flex items-center justify-center font-black text-2xl mb-4">RJ</div>
+                <span class="inline-block bg-white/10 border border-white/20 text-emerald-100 text-[10px] font-black tracking-widest uppercase px-3 py-1.5 rounded-lg mb-2">[FOTO MENYUSUL]</span>
+                <h3 class="text-white font-bold text-lg">Balai Desa Rantau Jaya</h3>
+                <p class="text-emerald-100/60 text-xs font-medium mt-1">Foto asli gedung balai desa belum tersedia.</p>
             </div>
         </div>
     </div>
 </div>
 
-<div class="bg-white py-20 border-t border-gray-100">
+<div class="bg-white py-20 border-t border-gray-100 reveal">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center mb-16 animate-entrance" style="animation-delay: 0.4s;">
@@ -92,40 +91,37 @@
         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             
             <div class="bg-gray-50/50 p-8 rounded-[2rem] border border-gray-100 text-center group smooth-spring hover:-translate-y-3 hover:bg-white hover:shadow-[0_20px_50px_rgb(0,0,0,0.06)] animate-entrance" style="animation-delay: 0.5s;">
-                <div class="relative w-32 h-32 mx-auto mb-6">
-                    <div class="absolute inset-0 bg-yellow-400 rounded-full blur-md opacity-30 group-hover:opacity-60 group-hover:scale-110 smooth-spring"></div>
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=300" alt="Kades" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-lg smooth-spring group-hover:scale-105">
-                </div>
+                <!-- TODO: ganti dengan foto resmi Kepala Desa -->
+                <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-emerald-700 text-white flex items-center justify-center font-black text-4xl border-4 border-white shadow-lg">AJ</div>
                 <span class="inline-block bg-emerald-100 text-emerald-700 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full mb-3 border border-emerald-200">Pimpinan</span>
                 <h3 class="font-black text-emerald-950 text-xl mb-1">Bapak Ahmad Junaidi</h3>
                 <p class="text-sm text-gray-500 font-medium">Kepala Desa</p>
+                <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-2">[Foto resmi menyusul]</p>
             </div>
 
             <div class="bg-gray-50/50 p-8 rounded-[2rem] border border-gray-100 text-center group smooth-spring hover:-translate-y-3 hover:bg-white hover:shadow-[0_20px_50px_rgb(0,0,0,0.06)] animate-entrance" style="animation-delay: 0.6s;">
-                <div class="relative w-32 h-32 mx-auto mb-6">
-                    <div class="absolute inset-0 bg-blue-400 rounded-full blur-md opacity-30 group-hover:opacity-60 group-hover:scale-110 smooth-spring"></div>
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=300" alt="Sekdes" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-lg smooth-spring group-hover:scale-105">
-                </div>
+                <!-- TODO: ganti dengan foto resmi Sekretaris Desa -->
+                <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-emerald-700 text-white flex items-center justify-center font-black text-4xl border-4 border-white shadow-lg">SR</div>
                 <span class="inline-block bg-gray-200 text-gray-700 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full mb-3 border border-gray-300">Administrasi</span>
                 <h3 class="font-black text-emerald-950 text-xl mb-1">Ibu Siti Rahma</h3>
                 <p class="text-sm text-gray-500 font-medium">Sekretaris Desa</p>
+                <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-2">[Foto resmi menyusul]</p>
             </div>
 
             <div class="bg-gray-50/50 p-8 rounded-[2rem] border border-gray-100 text-center group smooth-spring hover:-translate-y-3 hover:bg-white hover:shadow-[0_20px_50px_rgb(0,0,0,0.06)] animate-entrance" style="animation-delay: 0.7s;">
-                <div class="relative w-32 h-32 mx-auto mb-6">
-                    <div class="absolute inset-0 bg-emerald-400 rounded-full blur-md opacity-30 group-hover:opacity-60 group-hover:scale-110 smooth-spring"></div>
-                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=300" alt="Kaur" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-lg smooth-spring group-hover:scale-105">
-                </div>
+                <!-- TODO: ganti dengan foto resmi Kaur Keuangan -->
+                <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-emerald-700 text-white flex items-center justify-center font-black text-4xl border-4 border-white shadow-lg">BS</div>
                 <span class="inline-block bg-gray-200 text-gray-700 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full mb-3 border border-gray-300">Bendahara</span>
                 <h3 class="font-black text-emerald-950 text-xl mb-1">Bapak Budi Santoso</h3>
                 <p class="text-sm text-gray-500 font-medium">Kaur Keuangan</p>
+                <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-2">[Foto resmi menyusul]</p>
             </div>
 
         </div>
     </div>
 </div>
 
-<div class="bg-gray-50 py-20 border-t border-gray-100">
+<div class="bg-gray-50 py-20 border-t border-gray-100 reveal">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6 animate-entrance" style="animation-delay: 0.8s;">
@@ -135,22 +131,19 @@
             </div>
         </div>
 
-        <div class="w-full h-[400px] md:h-[500px] rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.05)] border border-gray-200 relative group animate-entrance" style="animation-delay: 0.9s;">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6664669865613!2d106.82496411476892!3d-6.175392395529188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1655000000000!5m2!1sid!2sid" 
-                class="absolute inset-0 w-full h-full border-0 grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 smooth-spring" 
-                allowfullscreen="" 
-                loading="lazy" 
+        <div class="w-full min-h-[400px] md:min-h-[500px] rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.05)] border border-gray-200 relative animate-entrance" style="animation-delay: 0.9s;">
+            <iframe
+                title="Peta Desa Rantau Jaya, Belitang Madang Raya, OKU Timur"
+                src="https://www.google.com/maps?q=Desa+Rantau+Jaya,+Belitang+Madang+Raya,+Ogan+Komering+Ulu+Timur,+Sumatera+Selatan&amp;output=embed"
+                class="absolute inset-0 w-full h-full border-0"
+                allowfullscreen=""
+                loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-            
-            <div class="absolute bottom-6 right-6 bg-white/90 backdrop-blur-md px-5 py-3 rounded-2xl shadow-lg border border-white smooth-spring group-hover:translate-x-20 group-hover:opacity-0">
+            <div class="absolute bottom-6 right-6 bg-white/90 backdrop-blur-md px-5 py-3 rounded-2xl shadow-lg border border-white">
                 <div class="flex items-center gap-3">
-                    <span class="flex h-3 w-3 relative">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
-                    </span>
-                    <span class="text-xs font-bold text-emerald-950 uppercase tracking-wider">Titik Koordinat Pusat</span>
+                    <span class="inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                    <span class="text-xs font-bold text-emerald-950 uppercase tracking-wider">Rantau Jaya, OKU Timur</span>
                 </div>
             </div>
         </div>

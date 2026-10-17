@@ -46,8 +46,8 @@
     <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-900/80 to-transparent"></div>
     
     <!-- Ornamen Glow Estetik Latar Belakang dengan Animasi Morph -->
-    <div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-emerald-500/20 blur-[100px] pointer-events-none animate-blob"></div>
-    <div class="absolute bottom-0 right-1/4 w-[600px] h-[400px] bg-blue-500/10 blur-[100px] pointer-events-none animate-blob" style="animation-delay: -5s; animation-direction: reverse;"></div>
+    <div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-emerald-500/20 blur-[100px] pointer-events-none"></div>
+    <div class="absolute bottom-0 right-1/4 w-[600px] h-[400px] bg-blue-500/10 blur-[100px] pointer-events-none" style="animation-delay: -5s; animation-direction: reverse;"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 text-center z-10 animate-fade-up" style="animation-delay: 0.1s;">
         <h1 class="text-4xl md:text-5xl font-black tracking-tight leading-tight mb-4">
@@ -58,7 +58,7 @@
 </div>
 
 <!-- ================= GRID KONTEN UTAMA ================= -->
-<div class="bg-gray-50 py-12 relative border-t border-gray-100">
+<div class="bg-gray-50 py-12 relative border-t border-gray-100 reveal">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 -mt-20">
         
         <!-- KARTU STATISTIK UTAMA -->

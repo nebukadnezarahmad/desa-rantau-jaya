@@ -25,8 +25,8 @@
     <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center opacity-40"></div>
     <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/40 to-transparent"></div>
     
-    <div class="absolute -top-40 -right-20 w-[600px] h-[600px] bg-emerald-500/40 blur-[80px] animate-morph" style="animation-delay: 0s;"></div>
-    <div class="absolute -bottom-40 -left-20 w-[600px] h-[600px] bg-yellow-500/30 blur-[80px] animate-morph" style="animation-delay: -5s;"></div>
+    <div class="absolute -top-40 -right-20 w-[600px] h-[600px] bg-emerald-500/40 blur-[80px]" style="animation-delay: 0s;"></div>
+    <div class="absolute -bottom-40 -left-20 w-[600px] h-[600px] bg-yellow-500/30 blur-[80px]" style="animation-delay: -5s;"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 text-center z-10">
         <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight leading-[1.1]">
@@ -77,7 +77,87 @@
     </div>
 </div>
 
-<div class="bg-gradient-to-b from-gray-50/50 to-white py-24 overflow-hidden">
+<!-- ================= LAYANAN ADMINISTRASI (data CONTOH, ganti dengan data asli) ================= -->
+<!-- TODO: ganti daftar layanan, syarat, dan jam pelayanan dengan data asli dari kantor desa -->
+<div class="bg-white py-20 md:py-24 border-t border-gray-100 reveal">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+            <div>
+                <div class="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 text-amber-700 text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg mb-4">Contoh</div>
+                <h2 class="text-3xl md:text-4xl font-black text-emerald-950 tracking-tight">Layanan Administrasi</h2>
+                <p class="text-gray-500 font-medium text-sm md:text-base mt-2 max-w-xl">Urus surat langsung ke kantor desa pada jam pelayanan. Bawa syarat berikut agar sekali datang langsung jadi.</p>
+            </div>
+            <p class="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-100 rounded-xl px-4 py-2.5 whitespace-nowrap">Jam pelayanan: Senin–Jumat, 08.00–14.00</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4 md:gap-5">
+            <div class="flex gap-4 bg-gray-50/70 border border-gray-100 rounded-2xl p-5 smooth-spring hover:bg-white hover:shadow-md hover:-translate-y-0.5">
+                <div class="w-11 h-11 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black text-sm flex-shrink-0">1</div>
+                <div>
+                    <h3 class="font-black text-emerald-950">Surat Pengantar KTP</h3>
+                    <p class="text-xs text-gray-500 font-medium mt-1">Syarat: fotokopi KK, surat pengantar RT setempat.</p>
+                </div>
+            </div>
+            <div class="flex gap-4 bg-gray-50/70 border border-gray-100 rounded-2xl p-5 smooth-spring hover:bg-white hover:shadow-md hover:-translate-y-0.5">
+                <div class="w-11 h-11 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black text-sm flex-shrink-0">2</div>
+                <div>
+                    <h3 class="font-black text-emerald-950">Surat Keterangan Domisili</h3>
+                    <p class="text-xs text-gray-500 font-medium mt-1">Syarat: fotokopi KTP dan KK yang masih berlaku.</p>
+                </div>
+            </div>
+            <div class="flex gap-4 bg-gray-50/70 border border-gray-100 rounded-2xl p-5 smooth-spring hover:bg-white hover:shadow-md hover:-translate-y-0.5">
+                <div class="w-11 h-11 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black text-sm flex-shrink-0">3</div>
+                <div>
+                    <h3 class="font-black text-emerald-950">Surat Keterangan Tidak Mampu</h3>
+                    <p class="text-xs text-gray-500 font-medium mt-1">Syarat: fotokopi KK dan KTP, surat keterangan RT.</p>
+                </div>
+            </div>
+            <div class="flex gap-4 bg-gray-50/70 border border-gray-100 rounded-2xl p-5 smooth-spring hover:bg-white hover:shadow-md hover:-translate-y-0.5">
+                <div class="w-11 h-11 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black text-sm flex-shrink-0">4</div>
+                <div>
+                    <h3 class="font-black text-emerald-950">Surat Keterangan Usaha</h3>
+                    <p class="text-xs text-gray-500 font-medium mt-1">Syarat: fotokopi KTP, foto tempat usaha.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= PENGUMUMAN (data CONTOH, ganti dengan data asli) ================= -->
+<!-- TODO: ganti dengan pengumuman yang sedang berlaku -->
+<div class="bg-emerald-950 py-20 md:py-24 relative overflow-hidden reveal">
+    <div class="absolute -top-32 right-0 w-[500px] h-[500px] bg-emerald-500/20 blur-[100px] pointer-events-none"></div>
+    <div class="max-w-4xl mx-auto px-4 relative z-10">
+        <div class="inline-flex items-center gap-2 bg-amber-400/15 border border-amber-400/30 text-amber-300 text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg mb-4">Contoh</div>
+        <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight mb-2">Pengumuman Desa</h2>
+        <p class="text-emerald-100/70 text-sm font-medium mb-10">Informasi resmi yang sedang berlaku untuk warga.</p>
+
+        <div class="space-y-4">
+            <div class="flex gap-5 bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-6 smooth-spring hover:bg-white/10">
+                <div class="flex-shrink-0 w-16 text-center bg-yellow-400 text-emerald-950 rounded-xl py-2.5 px-2">
+                    <div class="text-[10px] font-black uppercase">Agu</div>
+                    <div class="text-2xl font-black leading-none mt-0.5">17</div>
+                </div>
+                <div>
+                    <h3 class="font-black text-white text-lg leading-snug">Penyaluran Bantuan Pangan Tahap III</h3>
+                    <p class="text-emerald-100/70 text-sm font-medium mt-1.5 leading-relaxed">Penerima manfaat dimohon hadir ke balai desa pukul 09.00 dengan membawa KTP dan KK asli. Contoh pengumuman, jadwal menyusul.</p>
+                </div>
+            </div>
+            <div class="flex gap-5 bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-6 smooth-spring hover:bg-white/10">
+                <div class="flex-shrink-0 w-16 text-center bg-white/10 border border-white/15 text-white rounded-xl py-2.5 px-2">
+                    <div class="text-[10px] font-black uppercase text-emerald-200">Agu</div>
+                    <div class="text-2xl font-black leading-none mt-0.5">24</div>
+                </div>
+                <div>
+                    <h3 class="font-black text-white text-lg leading-snug">Kerja Bakti Membersihkan Saluran Air</h3>
+                    <p class="text-emerald-100/70 text-sm font-medium mt-1.5 leading-relaxed">Seluruh warga Dusun II dimohon membawa cangkul dan karung. Titik kumpul di depan musala. Contoh pengumuman.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-gradient-to-b from-gray-50/50 to-white py-24 overflow-hidden reveal">
     <div class="max-w-6xl mx-auto px-4">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-5xl font-black text-emerald-950 tracking-tight">Arah dan Tujuan</h2>
@@ -123,7 +203,62 @@
     </div>
 </div>
 
-<div class="py-16 bg-white relative">
+<!-- ================= KONTAK DARURAT + PETA (data CONTOH, ganti dengan data asli) ================= -->
+<!-- TODO: ganti nomor, alamat, jam buka, dan embed peta dengan data asli -->
+<div class="bg-gray-50 py-20 md:py-24 border-t border-gray-100 reveal">
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-6 md:gap-8 items-stretch">
+        <div class="bg-emerald-950 rounded-[2rem] p-8 md:p-10 relative overflow-hidden flex flex-col justify-center">
+            <div class="absolute -bottom-24 -right-24 w-[350px] h-[350px] bg-yellow-500/20 blur-[90px] pointer-events-none"></div>
+            <div class="inline-flex items-center gap-2 self-start bg-amber-400/15 border border-amber-400/30 text-amber-300 text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg mb-5">Contoh</div>
+            <h2 class="text-3xl font-black text-white tracking-tight mb-2">Kontak Darurat Desa</h2>
+            <p class="text-emerald-100/70 text-sm font-medium mb-8">Dihubungi pada jam pelayanan. Di luar jam kerja, datang langsung ke pos jaga.</p>
+            <div class="space-y-4 relative z-10">
+                <a href="tel:08000000000" class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-4 smooth-spring hover:bg-white/10">
+                    <div class="w-11 h-11 rounded-xl bg-yellow-400 text-emerald-950 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    </div>
+                    <div>
+                        <div class="text-[10px] font-black text-emerald-300 uppercase tracking-widest">Kantor Desa</div>
+                        <div class="text-white font-black text-lg">0800-000-0000</div>
+                    </div>
+                </a>
+                <div class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-4">
+                    <div class="w-11 h-11 rounded-xl bg-white/10 text-white flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <div class="text-[10px] font-black text-emerald-300 uppercase tracking-widest">Jam Pelayanan</div>
+                        <div class="text-white font-black">Senin–Jumat, 08.00–14.00</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-4">
+                    <div class="w-11 h-11 rounded-xl bg-white/10 text-white flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <div>
+                        <div class="text-[10px] font-black text-emerald-300 uppercase tracking-widest">Alamat</div>
+                        <div class="text-white font-bold text-sm">Jl. Lintas Desa No. 01, Rantau Jaya, Belitang Madang Raya, OKU Timur</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-[2rem] border border-gray-200 overflow-hidden relative min-h-[320px]">
+            <iframe
+                title="Peta Desa Rantau Jaya, Belitang Madang Raya, OKU Timur"
+                src="https://www.google.com/maps?q=Desa+Rantau+Jaya,+Belitang+Madang+Raya,+Ogan+Komering+Ulu+Timur,+Sumatera+Selatan&amp;output=embed"
+                class="absolute inset-0 w-full h-full border-0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="absolute bottom-5 left-5 right-5 sm:right-auto bg-white/90 backdrop-blur-md px-5 py-3 rounded-2xl shadow-lg border border-white">
+                <div class="text-xs font-bold text-emerald-950 uppercase tracking-wider">Rantau Jaya, Belitang Madang Raya, OKU Timur</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="py-16 bg-white relative reveal">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-4">
