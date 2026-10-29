@@ -77,46 +77,129 @@
     </div>
 </div>
 
-<div class="bg-white py-20 border-t border-gray-100 reveal">
+<div class="bg-white py-20 border-t border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center mb-16 animate-entrance" style="animation-delay: 0.4s;">
+        <div class="text-center mb-14 animate-entrance" style="animation-delay: 0.4s;">
             <div class="inline-flex items-center justify-center w-12 h-12 bg-emerald-50 rounded-2xl text-emerald-600 mb-4 border border-emerald-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
             </div>
-            <h2 class="text-3xl md:text-4xl font-black text-emerald-950 tracking-tight">Struktur Perangkat Desa</h2>
-            <p class="text-sm font-medium text-gray-500 mt-3 max-w-2xl mx-auto">Pamong desa yang siap mengabdi dan melayani kebutuhan administrasi maupun sosial masyarakat.</p>
+            <h2 class="text-3xl md:text-4xl font-black text-emerald-950 tracking-tight">Struktur Pemerintahan Desa</h2>
+            <p class="text-sm font-medium text-gray-500 mt-3 max-w-2xl mx-auto">Susunan lengkap pimpinan, sekretariat, kasi dan kaur, kepala dusun, ketua RT, serta lembaga desa Rantau Jaya.</p>
         </div>
 
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            
-            <div class="bg-gray-50/50 p-8 rounded-[2rem] border border-gray-100 text-center group smooth-spring hover:-translate-y-3 hover:bg-white hover:shadow-[0_20px_50px_rgb(0,0,0,0.06)] animate-entrance" style="animation-delay: 0.5s;">
-                <!-- TODO: ganti dengan foto resmi Kepala Desa -->
-                <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-emerald-700 text-white flex items-center justify-center font-black text-4xl border-4 border-white shadow-lg">AJ</div>
-                <span class="inline-block bg-emerald-100 text-emerald-700 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full mb-3 border border-emerald-200">Pimpinan</span>
-                <h3 class="font-black text-emerald-950 text-xl mb-1">Bapak Ahmad Junaidi</h3>
-                <p class="text-sm text-gray-500 font-medium">Kepala Desa</p>
-                <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-2">[Foto resmi menyusul]</p>
-            </div>
+        @php
+            $pimpinan = collect($perangkat)->whereIn('kelompok', ['Pimpinan', 'Sekretariat']);
+            $kasiKaur = collect($perangkat)->where('kelompok', 'Kasi & Kaur');
+        @endphp
 
-            <div class="bg-gray-50/50 p-8 rounded-[2rem] border border-gray-100 text-center group smooth-spring hover:-translate-y-3 hover:bg-white hover:shadow-[0_20px_50px_rgb(0,0,0,0.06)] animate-entrance" style="animation-delay: 0.6s;">
-                <!-- TODO: ganti dengan foto resmi Sekretaris Desa -->
-                <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-emerald-700 text-white flex items-center justify-center font-black text-4xl border-4 border-white shadow-lg">SR</div>
-                <span class="inline-block bg-gray-200 text-gray-700 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full mb-3 border border-gray-300">Administrasi</span>
-                <h3 class="font-black text-emerald-950 text-xl mb-1">Ibu Siti Rahma</h3>
-                <p class="text-sm text-gray-500 font-medium">Sekretaris Desa</p>
-                <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-2">[Foto resmi menyusul]</p>
-            </div>
+        <!-- Pimpinan dan Sekretariat -->
+        <div class="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto mb-14">
+            @foreach ($pimpinan as $orang)
+                <article class="relative overflow-hidden rounded-[2rem] border p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] smooth-spring hover:-translate-y-1 hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] {{ $orang['kelompok'] === 'Pimpinan' ? 'bg-emerald-950 border-emerald-900 text-white' : 'bg-white border-gray-100' }}">
+                    @if ($orang['kelompok'] === 'Pimpinan')
+                        <div class="absolute -top-16 -right-16 w-48 h-48 bg-yellow-400/10 rounded-full blur-2xl pointer-events-none"></div>
+                    @endif
+                    <div class="relative flex items-start justify-between gap-4 mb-6">
+                        <div class="w-16 h-16 rounded-2xl flex items-center justify-center font-black text-xl border {{ $orang['kelompok'] === 'Pimpinan' ? 'bg-yellow-400 text-emerald-950 border-yellow-300' : 'bg-emerald-50 text-emerald-700 border-emerald-100' }}">
+                            {{ $orang['inisial'] }}
+                        </div>
+                        <span class="inline-block text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full border {{ $orang['kelompok'] === 'Pimpinan' ? 'bg-white/10 text-yellow-300 border-white/20' : 'bg-gray-100 text-gray-600 border-gray-200' }}">
+                            {{ $orang['kelompok'] === 'Pimpinan' ? 'Pimpinan' : 'Sekretariat' }}
+                        </span>
+                    </div>
+                    <h3 class="relative font-black text-2xl leading-snug mb-1 {{ $orang['kelompok'] === 'Pimpinan' ? 'text-white' : 'text-emerald-950' }}">{{ $orang['nama'] }}</h3>
+                    <p class="relative text-sm font-bold {{ $orang['kelompok'] === 'Pimpinan' ? 'text-emerald-200' : 'text-emerald-700' }}">{{ $orang['jabatan'] }}</p>
+                    @if ($orang['masa_bakti'])
+                        <p class="relative text-[10px] font-bold uppercase tracking-widest mt-4 {{ $orang['kelompok'] === 'Pimpinan' ? 'text-emerald-300/70' : 'text-gray-400' }}">Masa bakti {{ $orang['masa_bakti'] }}</p>
+                    @endif
+                </article>
+            @endforeach
+        </div>
 
-            <div class="bg-gray-50/50 p-8 rounded-[2rem] border border-gray-100 text-center group smooth-spring hover:-translate-y-3 hover:bg-white hover:shadow-[0_20px_50px_rgb(0,0,0,0.06)] animate-entrance" style="animation-delay: 0.7s;">
-                <!-- TODO: ganti dengan foto resmi Kaur Keuangan -->
-                <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-emerald-700 text-white flex items-center justify-center font-black text-4xl border-4 border-white shadow-lg">BS</div>
-                <span class="inline-block bg-gray-200 text-gray-700 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full mb-3 border border-gray-300">Bendahara</span>
-                <h3 class="font-black text-emerald-950 text-xl mb-1">Bapak Budi Santoso</h3>
-                <p class="text-sm text-gray-500 font-medium">Kaur Keuangan</p>
-                <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-2">[Foto resmi menyusul]</p>
+        <!-- Kasi dan Kaur -->
+        <div class="mb-14">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-1.5 h-6 bg-emerald-600 rounded-full"></div>
+                <h3 class="font-bold text-xl text-gray-800">Kasi dan Kaur</h3>
             </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                @foreach ($kasiKaur as $orang)
+                    <article class="bg-gray-50/70 border border-gray-100 rounded-2xl p-6 smooth-spring hover:bg-white hover:shadow-md hover:-translate-y-1">
+                        <div class="w-11 h-11 rounded-xl bg-white border border-gray-200 text-emerald-700 flex items-center justify-center font-black text-sm mb-5">
+                            {{ $orang['inisial'] }}
+                        </div>
+                        <h4 class="font-black text-emerald-950 leading-snug mb-1">{{ $orang['nama'] }}</h4>
+                        <p class="text-xs font-bold text-gray-500 leading-relaxed">{{ $orang['jabatan'] }}</p>
+                    </article>
+                @endforeach
+            </div>
+        </div>
 
+        <!-- Kepala Dusun dan Ketua RT -->
+        <div class="mb-14">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-1.5 h-6 bg-yellow-500 rounded-full"></div>
+                <h3 class="font-bold text-xl text-gray-800">Kepala Dusun dan Ketua RT</h3>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                @foreach ($kewilayahan as $wilayah)
+                    <article class="bg-white rounded-[2rem] border border-gray-100 overflow-hidden shadow-[0_4px_20px_rgb(0,0,0,0.03)] smooth-spring hover:shadow-[0_20px_50px_rgb(0,0,0,0.06)]">
+                        <div class="bg-emerald-950 px-7 py-5 flex items-center justify-between gap-4">
+                            <div>
+                                <div class="text-[10px] font-black uppercase tracking-widest text-emerald-300">{{ $wilayah['rw'] }}</div>
+                                <h4 class="text-xl font-black text-white mt-0.5">{{ $wilayah['dusun'] }}</h4>
+                            </div>
+                            <span class="text-[10px] font-black uppercase tracking-widest text-emerald-950 bg-yellow-400 px-3 py-1.5 rounded-full">Kadus</span>
+                        </div>
+                        <div class="p-7">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-gray-400 mb-1">Kepala Dusun</p>
+                            <p class="text-lg font-black text-emerald-950 mb-5">{{ $wilayah['kadus'] }}</p>
+
+                            <div class="border-t border-gray-100 pt-5">
+                                <p class="text-[10px] font-black uppercase tracking-widest text-gray-400 mb-3">Ketua RT</p>
+                                <ul class="space-y-2.5">
+                                    @foreach ($wilayah['rt'] as $namaRt)
+                                        <li class="flex items-center justify-between gap-4">
+                                            <span class="inline-flex items-center justify-center min-w-[3.25rem] text-[10px] font-black uppercase tracking-widest text-emerald-700 bg-emerald-50 border border-emerald-100 rounded-lg px-2 py-1">RT {{ str_pad($loop->iteration, 2, '0', STR_PAD_LEFT) }}</span>
+                                            <span class="text-sm font-bold text-gray-700 text-right">{{ $namaRt }}</span>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- Lembaga Desa -->
+        <div>
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-1.5 h-6 bg-blue-600 rounded-full"></div>
+                <h3 class="font-bold text-xl text-gray-800">Lembaga Desa</h3>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                @foreach ($lembaga as $badan)
+                    <article class="bg-gray-50/70 border border-gray-100 rounded-[2rem] p-7">
+                        <div class="flex items-start justify-between gap-4 mb-4">
+                            <h4 class="font-black text-emerald-950 leading-snug">{{ $badan['nama'] }}</h4>
+                            <span class="flex-shrink-0 text-[10px] font-black uppercase tracking-widest text-gray-500 bg-white border border-gray-200 rounded-full px-3 py-1.5">{{ $badan['masa_bakti'] }}</span>
+                        </div>
+                        <ul class="divide-y divide-gray-200/70">
+                            @foreach ($badan['anggota'] as $anggota)
+                                <li class="flex items-baseline justify-between gap-4 py-2.5">
+                                    <span class="text-[10px] font-black uppercase tracking-widest text-gray-400">{{ $anggota['jabatan'] }}</span>
+                                    <span class="text-sm font-bold text-gray-700 text-right">{{ $anggota['nama'] }}</span>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </article>
+                @endforeach
+            </div>
+            <p class="mt-6 text-xs text-gray-500 leading-relaxed">
+                Sumber: Monografi Desa Rantau Jaya 2025, daftar perangkat per 12 Januari 2025. Masa bakti MPD 2021–2026 sudah berakhir dan menunggu pembaruan.
+            </p>
         </div>
     </div>
 </div>

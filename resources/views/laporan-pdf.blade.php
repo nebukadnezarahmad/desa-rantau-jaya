@@ -135,8 +135,7 @@
     <div class="ttd-container">
         <div class="ttd-box">
             <p>Rantau Jaya, {{ \Carbon\Carbon::now()->translatedFormat('d F Y') }}<br>Kepala Desa Rantau Jaya</p>
-            <p class="ttd-nama">Ahmad Junaidi, S.E.</p>
-            NIP. 19800512 201001 1 003
+            <p class="ttd-nama">Drs. H. Pahrur Rozi</p>
         </div>
         <div style="clear: both;"></div>
     </div>

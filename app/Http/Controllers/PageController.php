@@ -30,7 +30,106 @@ class PageController extends Controller
     // 2. Halaman Profil Desa
     public function profil()
     {
-        return view('profil');
+        // Struktur pemerintahan dari Monografi Desa Rantau Jaya 2025
+        // (daftar perangkat per 12 Januari 2025).
+        $perangkat = [
+            [
+                'nama' => 'Drs. H. Pahrur Rozi',
+                'jabatan' => 'Kepala Desa',
+                'inisial' => 'PR',
+                'kelompok' => 'Pimpinan',
+                'masa_bakti' => '2023–2029',
+            ],
+            [
+                'nama' => 'Suyadi',
+                'jabatan' => 'Sekretaris Desa',
+                'inisial' => 'SY',
+                'kelompok' => 'Sekretariat',
+                'masa_bakti' => null,
+            ],
+            [
+                'nama' => 'Donny Renaldo, S.E.',
+                'jabatan' => 'Kasi Pemerintahan',
+                'inisial' => 'DR',
+                'kelompok' => 'Kasi & Kaur',
+                'masa_bakti' => null,
+            ],
+            [
+                'nama' => 'Zulfadli, S.E.',
+                'jabatan' => 'Kasi Kesra dan Pelayanan',
+                'inisial' => 'ZF',
+                'kelompok' => 'Kasi & Kaur',
+                'masa_bakti' => null,
+            ],
+            [
+                'nama' => 'Helson Apriyanto, S.T.',
+                'jabatan' => 'Kaur Umum dan Perencanaan',
+                'inisial' => 'HA',
+                'kelompok' => 'Kasi & Kaur',
+                'masa_bakti' => null,
+            ],
+            [
+                'nama' => 'Alpi',
+                'jabatan' => 'Kaur Keuangan',
+                'inisial' => 'AL',
+                'kelompok' => 'Kasi & Kaur',
+                'masa_bakti' => null,
+            ],
+        ];
+
+        $kewilayahan = [
+            [
+                'dusun' => 'Dusun I',
+                'rw' => 'RW 01',
+                'kadus' => 'Aminuddin',
+                'rt' => ['Marsudi', 'Wahyu Adi Saputra', 'Ubaidillah'],
+            ],
+            [
+                'dusun' => 'Dusun II',
+                'rw' => 'RW 02',
+                'kadus' => 'Rasyid Redho',
+                'rt' => ['Ahmad Wilano', 'Juhdi', 'Darwin'],
+            ],
+            [
+                'dusun' => 'Dusun III',
+                'rw' => 'RW 03',
+                'kadus' => 'Pahrul',
+                'rt' => ['Resyadi', 'Sugiyarto', 'Sutoto'],
+            ],
+            [
+                'dusun' => 'Dusun IV',
+                'rw' => 'RW 04',
+                'kadus' => 'G.A. Marthin Oganda',
+                'rt' => ['Doni Kabemeka, S.E.', 'Muslihudin', 'Muhajir'],
+            ],
+        ];
+
+        $lembaga = [
+            [
+                'nama' => 'Badan Permusyawaratan Desa (BPD)',
+                'masa_bakti' => '2021–2029',
+                'anggota' => [
+                    ['jabatan' => 'Ketua', 'nama' => 'Kanedy'],
+                    ['jabatan' => 'Wakil Ketua', 'nama' => 'Rahmad Hidayat, S.E.'],
+                    ['jabatan' => 'Sekretaris', 'nama' => 'Gunawan'],
+                    ['jabatan' => 'Anggota', 'nama' => 'Akuan'],
+                    ['jabatan' => 'Anggota', 'nama' => 'Muin Nuddin'],
+                ],
+            ],
+            [
+                'nama' => 'Majelis Pertimbangan Desa (MPD)',
+                'masa_bakti' => '2021–2026',
+                'anggota' => [
+                    ['jabatan' => 'Ketua', 'nama' => 'Andi Azwar, S.Ag.'],
+                    ['jabatan' => 'Sekretaris', 'nama' => 'Amir Fatah'],
+                    ['jabatan' => 'Bendahara', 'nama' => 'Bambang Irawan, S.T.'],
+                    ['jabatan' => 'Anggota', 'nama' => 'Ahmad Riduan'],
+                    ['jabatan' => 'Anggota', 'nama' => 'Sumardi'],
+                ],
+            ],
+        ];
+
+        return view('profil', compact('perangkat', 'kewilayahan', 'lembaga'));
     }
 
     // 3. Halaman Direktori UMKM Desa (Dinamis)
