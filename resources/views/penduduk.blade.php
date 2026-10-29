@@ -58,7 +58,7 @@
 </div>
 
 <!-- ================= GRID KONTEN UTAMA ================= -->
-<div class="bg-gray-50 py-12 relative border-t border-gray-100 reveal">
+<div class="bg-gray-50 py-12 relative border-t border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 -mt-20">
         
         <!-- KARTU STATISTIK UTAMA -->
@@ -177,6 +177,86 @@
                 </div>
             </div>
 
+        </div>
+
+        @php
+            $totalUsia = collect($kelompok_usia)->sum(fn ($g) => $g['pria'] + $g['wanita']);
+            $maxUsia = collect($kelompok_usia)->max(fn ($g) => $g['pria'] + $g['wanita']);
+            $usiaProduktif = collect($kelompok_usia)->slice(3, 10)->sum(fn ($g) => $g['pria'] + $g['wanita']);
+            $usiaNonProduktif = $totalUsia - $usiaProduktif;
+        @endphp
+
+        <!-- Kelompok Usia -->
+        <div class="mt-6 md:mt-8 bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100">
+            <div class="flex items-center gap-3 mb-2">
+                <div class="w-1.5 h-6 bg-emerald-600 rounded-full"></div>
+                <h2 class="font-bold text-xl text-gray-800">Jumlah Penduduk Menurut Usia</h2>
+            </div>
+            <p class="text-sm text-gray-500 mb-8 ml-4">Sebaran penduduk per kelompok umur, akhir tahun 2025.</p>
+
+            <div class="grid sm:grid-cols-2 gap-3 mb-8">
+                <div class="flex items-center justify-between gap-4 bg-emerald-50/60 border border-emerald-100 rounded-2xl px-5 py-4">
+                    <div>
+                        <div class="text-[10px] font-black text-emerald-700 uppercase tracking-widest">Usia Produktif (15–64)</div>
+                        <div class="text-2xl font-black text-emerald-950 mt-1">{{ number_format($usiaProduktif, 0, ',', '.') }} <span class="text-sm font-bold text-emerald-700">jiwa</span></div>
+                    </div>
+                    <div class="text-sm font-black text-emerald-700">{{ $totalUsia > 0 ? round($usiaProduktif / $totalUsia * 100, 1) : 0 }}%</div>
+                </div>
+                <div class="flex items-center justify-between gap-4 bg-gray-50 border border-gray-100 rounded-2xl px-5 py-4">
+                    <div>
+                        <div class="text-[10px] font-black text-gray-500 uppercase tracking-widest">Usia Non-Produktif</div>
+                        <div class="text-2xl font-black text-gray-800 mt-1">{{ number_format($usiaNonProduktif, 0, ',', '.') }} <span class="text-sm font-bold text-gray-500">jiwa</span></div>
+                    </div>
+                    <div class="text-sm font-black text-gray-500">{{ $totalUsia > 0 ? round($usiaNonProduktif / $totalUsia * 100, 1) : 0 }}%</div>
+                </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-x-10 gap-y-5">
+                @foreach ($kelompok_usia as $g)
+                    @php $jumlahUsia = $g['pria'] + $g['wanita']; @endphp
+                    <div>
+                        <div class="flex items-baseline justify-between gap-4 text-sm mb-1.5">
+                            <span class="font-bold text-gray-700">{{ $g['label'] }} tahun</span>
+                            <span class="font-black text-gray-800">{{ number_format($jumlahUsia, 0, ',', '.') }}</span>
+                        </div>
+                        <div class="w-full bg-gray-100 h-2.5 rounded-full overflow-hidden">
+                            <div class="bg-emerald-600 h-full rounded-full" style="width: {{ $maxUsia > 0 ? round($jumlahUsia / $maxUsia * 100, 1) : 0 }}%"></div>
+                        </div>
+                        <div class="mt-1.5 text-[10px] font-bold text-gray-400 uppercase tracking-wider">
+                            L {{ number_format($g['pria'], 0, ',', '.') }} &middot; P {{ number_format($g['wanita'], 0, ',', '.') }}
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+
+            <p class="mt-8 pt-5 border-t border-gray-100 text-xs text-gray-500 leading-relaxed">
+                Sumber: Monografi Desa Rantau Jaya 2025. Jumlah pada tabel usia adalah {{ number_format($totalUsia, 0, ',', '.') }} jiwa, sedangkan angka ringkasan desa {{ number_format($statistik['total_penduduk'], 0, ',', '.') }} jiwa. Selisih berasal dari ketidaksesuaian data sumber.
+            </p>
+        </div>
+
+        <!-- Mata Pencaharian -->
+        <div class="mt-6 md:mt-8 bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100">
+            <div class="flex items-center gap-3 mb-2">
+                <div class="w-1.5 h-6 bg-yellow-500 rounded-full"></div>
+                <h2 class="font-bold text-xl text-gray-800">Jumlah Penduduk Menurut Pekerjaan</h2>
+            </div>
+            <p class="text-sm text-gray-500 mb-8 ml-4">Sektor mata pencaharian utama warga Desa Rantau Jaya.</p>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                @foreach ($mata_pencaharian as $i => $kerja)
+                    <div class="bg-gray-50/70 border border-gray-100 rounded-2xl p-6 smooth-spring hover:bg-white hover:shadow-md hover:-translate-y-1">
+                        <div class="w-10 h-10 rounded-xl bg-white border border-gray-200 text-emerald-700 flex items-center justify-center font-black text-sm mb-4">
+                            {{ str_pad($i + 1, 2, '0', STR_PAD_LEFT) }}
+                        </div>
+                        <h3 class="font-black text-emerald-950 leading-snug mb-2">{{ $kerja['nama'] }}</h3>
+                        <p class="text-xs text-gray-500 font-medium leading-relaxed">{{ $kerja['keterangan'] }}</p>
+                    </div>
+                @endforeach
+            </div>
+
+            <p class="mt-8 pt-5 border-t border-gray-100 text-xs text-gray-500 leading-relaxed">
+                Monografi Desa 2025 mencatat sektor pekerjaan secara umum, tetapi belum memuat angka rinci per sektor. Data jumlah per pekerjaan akan ditambahkan setelah pendataan kependudukan diperbarui.
+            </p>
         </div>
     </div>
 </div>

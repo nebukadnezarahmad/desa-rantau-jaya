@@ -74,7 +74,49 @@ class PageController extends Controller
             'dusun_4' => 762,
         ];
 
-        return view('penduduk', compact('statistik'));
+        // Tabel "Jumlah Penduduk Menurut Umur" pada monografi tahun 2025.
+        // Jumlah tabel (3.254) berbeda dari angka headline (3.218); selisih
+        // dicatat sebagai ketidaksesuaian sumber, bukan diubah.
+        $kelompok_usia = [
+            ['label' => '0–4', 'pria' => 71, 'wanita' => 84],
+            ['label' => '5–9', 'pria' => 121, 'wanita' => 117],
+            ['label' => '10–14', 'pria' => 125, 'wanita' => 137],
+            ['label' => '15–19', 'pria' => 144, 'wanita' => 145],
+            ['label' => '20–24', 'pria' => 150, 'wanita' => 151],
+            ['label' => '25–29', 'pria' => 160, 'wanita' => 165],
+            ['label' => '30–34', 'pria' => 146, 'wanita' => 148],
+            ['label' => '35–39', 'pria' => 132, 'wanita' => 133],
+            ['label' => '40–44', 'pria' => 140, 'wanita' => 141],
+            ['label' => '45–49', 'pria' => 112, 'wanita' => 118],
+            ['label' => '50–54', 'pria' => 84, 'wanita' => 89],
+            ['label' => '55–59', 'pria' => 74, 'wanita' => 79],
+            ['label' => '60–64', 'pria' => 39, 'wanita' => 47],
+            ['label' => '65–69', 'pria' => 25, 'wanita' => 32],
+            ['label' => '70+', 'pria' => 71, 'wanita' => 74],
+        ];
+
+        // Monografi hanya menyebut sektor mata pencaharian secara umum,
+        // tanpa angka rinci per sektor.
+        $mata_pencaharian = [
+            [
+                'nama' => 'Pegawai Negeri dan Swasta',
+                'keterangan' => 'Bekerja di instansi pemerintah, perusahaan, dan lembaga swasta.',
+            ],
+            [
+                'nama' => 'Pedagang',
+                'keterangan' => 'Mengelola warung, toko, dan usaha perdagangan kebutuhan warga.',
+            ],
+            [
+                'nama' => 'Buruh Harian Lepas',
+                'keterangan' => 'Bekerja pada pekerjaan bangunan, angkutan, dan jasa harian lainnya.',
+            ],
+            [
+                'nama' => 'Petani dan Buruh Tani',
+                'keterangan' => 'Menggarap kebun dan sawah; sebagian kecil dari total penduduk.',
+            ],
+        ];
+
+        return view('penduduk', compact('statistik', 'kelompok_usia', 'mata_pencaharian'));
     }
 
     // 5. Halaman Kontak & Form Pengaduan Warga (Dinamis)
