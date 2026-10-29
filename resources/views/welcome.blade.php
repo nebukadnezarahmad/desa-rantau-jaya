@@ -55,12 +55,12 @@
     <div class="bg-white/80 backdrop-blur-xl rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white p-4 md:p-8 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center divide-x divide-gray-100 smooth-spring hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)]">
         
         <div class="p-4 group smooth-spring hover:-translate-y-2 hover:scale-105 cursor-default">
-            <div class="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-emerald-700 to-emerald-950 mb-1">{{ number_format($statistik['total_penduduk'], 0, ',', '.') }}+</div>
+            <div class="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-emerald-700 to-emerald-950 mb-1">{{ number_format($statistik['total_penduduk'], 0, ',', '.') }}</div>
             <div class="text-[11px] font-bold text-gray-500 uppercase tracking-widest group-hover:text-emerald-600 smooth-spring">Total Penduduk</div>
         </div>
         
         <div class="p-4 group smooth-spring hover:-translate-y-2 hover:scale-105 cursor-default">
-            <div class="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-emerald-700 to-emerald-950 mb-1">{{ number_format($statistik['kepala_keluarga'], 0, ',', '.') }}+</div>
+            <div class="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-emerald-700 to-emerald-950 mb-1">{{ number_format($statistik['kepala_keluarga'], 0, ',', '.') }}</div>
             <div class="text-[11px] font-bold text-gray-500 uppercase tracking-widest group-hover:text-emerald-600 smooth-spring">Kepala Keluarga</div>
         </div>
         

@@ -108,7 +108,7 @@
                     </div>
                     <div>
                         <h3 class="text-lg font-black text-emerald-950">Pendaftaran UMKM</h3>
-                        <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Daftar Produk Warga</p>
+                        <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Daftar Usaha Warga</p>
                     </div>
                 </div>
 
@@ -122,30 +122,50 @@
                 <form action="{{ route('umkm.simpan') }}" method="POST" class="space-y-5">
                     @csrf
                     <div>
-                        <label class="block text-xs font-bold text-gray-600 mb-2">Nama Produk</label>
-                        <input type="text" name="nama_produk" required value="{{ old('nama_produk') }}" placeholder="Contoh: Keripik Singkong"
+                        <label class="block text-xs font-bold text-gray-600 mb-2">Nama Usaha</label>
+                        <input type="text" name="nama_produk" required value="{{ old('nama_produk') }}" placeholder="Contoh: Bengkel Las Mas Mul"
+                               class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 focus:outline-none text-sm bg-gray-50/50 smooth-spring">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-600 mb-2">Kategori</label>
+                        <select name="kategori" required
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 focus:outline-none text-sm bg-gray-50/50 smooth-spring">
+                            <option value="" disabled {{ old('kategori') ? '' : 'selected' }}>Pilih kategori usaha</option>
+                            @foreach([
+                                'Bengkel dan Jasa Perbaikan',
+                                'Kuliner dan Usaha Rumahan',
+                                'Usaha Teknologi dan Layanan Digital',
+                                'Perdagangan dan Kebutuhan Rumah Tangga',
+                                'Jasa Profesional dan Perawatan diri',
+                                'Jasa untuk acara dan kebutuhan masyarakat',
+                                'Pertanian',
+                                'Jasa Pendidikan dan Pelatihan',
+                                'Layanan Kesehatan',
+                            ] as $kategori)
+                                <option value="{{ $kategori }}" {{ old('kategori') === $kategori ? 'selected' : '' }}>{{ $kategori }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-600 mb-2">Alamat Usaha</label>
+                        <input type="text" name="alamat" value="{{ old('alamat') }}" placeholder="Jl. Swadaya, Rantau Jaya"
                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 focus:outline-none text-sm bg-gray-50/50 smooth-spring">
                     </div>
                     <div class="grid grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs font-bold text-gray-600 mb-2">Harga (Rp)</label>
-                            <input type="number" name="harga" required value="{{ old('harga') }}" placeholder="15000"
+                            <label class="block text-xs font-bold text-gray-600 mb-2">WhatsApp (opsional)</label>
+                            <input type="text" name="whatsapp" value="{{ old('whatsapp') }}" placeholder="62812345678"
                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 focus:outline-none text-sm bg-gray-50/50 smooth-spring">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-gray-600 mb-2">Pemilik</label>
-                            <input type="text" name="nama_penjual" required value="{{ old('nama_penjual') }}" placeholder="Nama Pemilik"
+                            <label class="block text-xs font-bold text-gray-600 mb-2">Link Maps (opsional)</label>
+                            <input type="url" name="maps_url" value="{{ old('maps_url') }}" placeholder="https://maps.app.goo.gl/..."
                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 focus:outline-none text-sm bg-gray-50/50 smooth-spring">
                         </div>
                     </div>
                     <div>
-                        <label class="block text-xs font-bold text-gray-600 mb-2">No. WhatsApp (62xx)</label>
-                        <input type="text" name="whatsapp" required value="{{ old('whatsapp') }}" placeholder="62812345678"
-                               class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 focus:outline-none text-sm bg-gray-50/50 smooth-spring">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-gray-600 mb-2">Deskripsi Produk</label>
-                        <textarea name="deskripsi" rows="3" required placeholder="Tulis keunggulan produk..."
+                        <label class="block text-xs font-bold text-gray-600 mb-2">Deskripsi (opsional)</label>
+                        <textarea name="deskripsi" rows="3" placeholder="Tulis layanan atau keunggulan usaha..."
                                   class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 focus:outline-none text-sm bg-gray-50/50 smooth-spring">{{ old('deskripsi') }}</textarea>
                     </div>
                     <button type="submit" class="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-emerald-950 font-black py-3.5 rounded-xl smooth-spring hover:shadow-[0_8px_20px_rgb(250,204,21,0.3)] hover:-translate-y-1 text-sm tracking-wide">

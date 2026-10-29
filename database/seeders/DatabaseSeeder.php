@@ -13,10 +13,16 @@ class DatabaseSeeder extends Seeder
 
     public function run(): void
     {
-        User::create([
-            'name' => 'Admin Rantau Jaya',
-            'email' => 'admin@rantaujaya.id',
-            'password' => Hash::make('admin123'),
+        User::firstOrCreate(
+            ['email' => 'admin@rantaujaya.id'],
+            [
+                'name' => 'Admin Rantau Jaya',
+                'password' => Hash::make('admin123'),
+            ]
+        );
+
+        $this->call([
+            UmkmSeeder::class,
         ]);
     }
 }

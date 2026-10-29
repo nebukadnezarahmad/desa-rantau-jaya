@@ -17,10 +17,10 @@ class PageController extends Controller
         $berita_terbaru = \App\Models\Berita::latest()->take(3)->get();
 
         // Statistik ringkas dari sumber yang sama dengan halaman Data Penduduk,
-        // plus hitungan nyata produk UMKM agar hero tidak menampilkan klaim statis.
+        // plus hitungan nyata usaha UMKM agar hero tidak menampilkan klaim statis.
         $statistik = [
-            'total_penduduk' => 3450,
-            'kepala_keluarga' => 980,
+            'total_penduduk' => 3218,
+            'kepala_keluarga' => 860,
         ];
         $jumlah_umkm = \App\Models\Umkm::count();
 
@@ -33,28 +33,45 @@ class PageController extends Controller
         return view('profil');
     }
 
-    // 3. Halaman Lapak UMKM Desa (Dinamis MySQL)
-    public function umkm()
+    // 3. Halaman Direktori UMKM Desa (Dinamis)
+    public function umkm(Request $request)
     {
-        // Mengambil semua data produk UMKM warga dari database
-        $semua_umkm = \App\Models\Umkm::latest()->get();
-        
-        return view('umkm', compact('semua_umkm'));
+        $kategori = $request->query('kategori');
+
+        // Urutkan per kategori agar direktori mudah dipindai.
+        $semua_umkm = Umkm::query()
+            ->when($kategori, fn ($query) => $query->where('kategori', $kategori))
+            ->orderBy('kategori')
+            ->orderBy('nama_produk')
+            ->get();
+
+        $daftar_kategori = Umkm::query()
+            ->select('kategori')
+            ->whereNotNull('kategori')
+            ->distinct()
+            ->orderBy('kategori')
+            ->pluck('kategori');
+
+        $total_umkm = Umkm::count();
+
+        return view('umkm', compact('semua_umkm', 'daftar_kategori', 'total_umkm', 'kategori'));
     }
 
     // 4. Halaman Data Demografi Penduduk Desa
     public function penduduk()
     {
         // Menyusun data statistik demografi Desa Rantau Jaya
+        // Sumber: Monografi Desa Rantau Jaya, rekapitulasi akhir Desember 2024.
         $statistik = [
-            'total_penduduk' => 3450,
-            'kepala_keluarga' => 980,
-            'wajib_pilih' => 2100,
-            'pria' => 1780,
-            'wanita' => 1670,
-            'dusun_1' => 1200,
-            'dusun_2' => 1150,
-            'dusun_3' => 1100,
+            'total_penduduk' => 3218,
+            'kepala_keluarga' => 860,
+            'wajib_ktp' => 2865,
+            'pria' => 1595,
+            'wanita' => 1623,
+            'dusun_1' => 566,
+            'dusun_2' => 1009,
+            'dusun_3' => 917,
+            'dusun_4' => 762,
         ];
 
         return view('penduduk', compact('statistik'));

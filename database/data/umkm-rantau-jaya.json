@@ -1,0 +1,570 @@
+[
+  {
+    "nama": "Ode Las",
+    "kategori": "Bengkel dan Jasa Perbaikan",
+    "deskripsi": "Jasa bengkel las",
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": "6281278570817",
+    "maps_url": "https://maps.app.goo.gl/NnL9yKeowcCvSren9"
+  },
+  {
+    "nama": "Bengkel Las Mas Mul",
+    "kategori": "Bengkel dan Jasa Perbaikan",
+    "deskripsi": "Usaha pengelasan untuk kebutuhan rumah tangga dan bangunan",
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": "6287819743801",
+    "maps_url": "https://maps.app.goo.gl/t7t9ASXEvVqR278d9"
+  },
+  {
+    "nama": "Bengkel Mobil Anto Teknik",
+    "kategori": "Bengkel dan Jasa Perbaikan",
+    "deskripsi": null,
+    "alamat": "Jl. Pembangunan No.1, RT.003/RW.001Rantau, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32383, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/pXxaBEFaLf6WmYUa7"
+  },
+  {
+    "nama": "Klinik Elektro Ifoel Service",
+    "kategori": "Bengkel dan Jasa Perbaikan",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, lorong, zulmahbur, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": "6281274577677",
+    "maps_url": "https://maps.app.goo.gl/9qVbQcEwv7cxqvMJ8"
+  },
+  {
+    "nama": "Tukang Solder",
+    "kategori": "Bengkel dan Jasa Perbaikan",
+    "deskripsi": null,
+    "alamat": "Jl. Rantau Jaya, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/1g5Sr3JiiySzsfNMA"
+  },
+  {
+    "nama": "DyRa Bengkel",
+    "kategori": "Bengkel dan Jasa Perbaikan",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": "6285769656619",
+    "maps_url": "https://maps.app.goo.gl/WK4xqbfaitFKPqmR7"
+  },
+  {
+    "nama": "Bengkel Motor dan Helikopter",
+    "kategori": "Bengkel dan Jasa Perbaikan",
+    "deskripsi": null,
+    "alamat": null,
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/MXaCtKU294JV2Xsz5"
+  },
+  {
+    "nama": "Servis Elektro",
+    "kategori": "Bengkel dan Jasa Perbaikan",
+    "deskripsi": null,
+    "alamat": "Jl. Rantau Jaya Jl. Pembangunan 1, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32362, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/Egx6zkUcV5GAsZvs9"
+  },
+  {
+    "nama": "Bengkel Mobil dan Las Putra Armada",
+    "kategori": "Bengkel dan Jasa Perbaikan",
+    "deskripsi": null,
+    "alamat": "Jl.Gotong Royong No.040, RT.002/RW.003, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/VEeteR4LnoQKZB6f7"
+  },
+  {
+    "nama": "Steam Adam",
+    "kategori": "Bengkel dan Jasa Perbaikan",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/8hdsDKKvhhHsbzxV7"
+  },
+  {
+    "nama": "Cucian Mobil dan Motor Aji Steam",
+    "kategori": "Bengkel dan Jasa Perbaikan",
+    "deskripsi": null,
+    "alamat": "Jl. Swadaya, Rantau Jaya, Kec. Belitang, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32383, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/RoZDLUCAYV3aT2Ay5"
+  },
+  {
+    "nama": "Bengkel Three Motor",
+    "kategori": "Bengkel dan Jasa Perbaikan",
+    "deskripsi": null,
+    "alamat": "Jl. Ki Hajar Dewantara No.46, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/PAovJpPAJtHSSYhM6"
+  },
+  {
+    "nama": "Indah Motor Jaya",
+    "kategori": "Bengkel dan Jasa Perbaikan",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/XuV1b85uCoqZpA6H9"
+  },
+  {
+    "nama": "Juicy World",
+    "kategori": "Kuliner dan Usaha Rumahan",
+    "deskripsi": null,
+    "alamat": "Jl. Marga Pemuka Bangsa Raja, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/h6Rqrgka77nQtxFYA"
+  },
+  {
+    "nama": "La Vita Depati",
+    "kategori": "Kuliner dan Usaha Rumahan",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32363, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/XDDSCExqTncyHvYC9"
+  },
+  {
+    "nama": "Angkringan Milenial Belitang",
+    "kategori": "Kuliner dan Usaha Rumahan",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/TAon2TiE7YXqXMig6"
+  },
+  {
+    "nama": "Bunda maya (bunda cake)",
+    "kategori": "Kuliner dan Usaha Rumahan",
+    "deskripsi": null,
+    "alamat": "Jl. Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/6r61mx6nGE4VAC5o9"
+  },
+  {
+    "nama": "Pempek Mama Ais",
+    "kategori": "Kuliner dan Usaha Rumahan",
+    "deskripsi": null,
+    "alamat": "Lrg. Soponyono, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/nYdbc3A7yhjfNJn48"
+  },
+  {
+    "nama": "Nyonya Pempek",
+    "kategori": "Kuliner dan Usaha Rumahan",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/nYmmNP6b1fgrYnwX9"
+  },
+  {
+    "nama": "Kopi Bubuk Asli Rama",
+    "kategori": "Kuliner dan Usaha Rumahan",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/6CShum8mBgYe5cdp9"
+  },
+  {
+    "nama": "Warung Mie Ayam Bakso bu Hilda",
+    "kategori": "Kuliner dan Usaha Rumahan",
+    "deskripsi": null,
+    "alamat": "Jl. Pembangunan 1 No.Perumnas, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/ELYJCF63rCSTNokC6"
+  },
+  {
+    "nama": "Lapis Umak",
+    "kategori": "Kuliner dan Usaha Rumahan",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/UxHZtTbDBFy4JR3Q9"
+  },
+  {
+    "nama": "Pusat oleh-oleh Okutimur",
+    "kategori": "Kuliner dan Usaha Rumahan",
+    "deskripsi": null,
+    "alamat": "Jl. Swadaya No. 464, Desa Tanah Merah Kec. Belitang Madang Raya, Rantau Jaya, kab, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/zNqEX45jmbU6fmw97"
+  },
+  {
+    "nama": "Balungan Nya Ane Iga Bakar",
+    "kategori": "Kuliner dan Usaha Rumahan",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/x5q8JueN6uULhfLv6"
+  },
+  {
+    "nama": "Pondok Nirwana",
+    "kategori": "Kuliner dan Usaha Rumahan",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/aU3wuNCG4vPohgYk6"
+  },
+  {
+    "nama": "Warkop Rantau Jaya",
+    "kategori": "Kuliner dan Usaha Rumahan",
+    "deskripsi": null,
+    "alamat": "Jl. Marga Pemuka Bangsa Raja, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/wSuNqK4VRbdS1yf4A"
+  },
+  {
+    "nama": "Ayam Geprek Kuyung",
+    "kategori": "Kuliner dan Usaha Rumahan",
+    "deskripsi": null,
+    "alamat": "Jl. Swadaya Lrg. Asoka belqkang, Rantau Jaya, Kec. Belitang, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32151, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/cM8eZ47884o9Y4SE9"
+  },
+  {
+    "nama": "Tanda Cellular",
+    "kategori": "Usaha Teknologi dan Layanan Digital",
+    "deskripsi": null,
+    "alamat": "Jl. Pembangunan 1, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": "62816409495",
+    "maps_url": "https://maps.app.goo.gl/4kUFgKvX1cQVfDfy8"
+  },
+  {
+    "nama": "Percetakan Madi",
+    "kategori": "Usaha Teknologi dan Layanan Digital",
+    "deskripsi": "Layanan Percetakan Undangan",
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/LqLhEEE7FTJZZs4L9"
+  },
+  {
+    "nama": "Prayu celluler & Print tugas sekolah",
+    "kategori": "Usaha Teknologi dan Layanan Digital",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/WHRfGRk95RW3pePa8"
+  },
+  {
+    "nama": "Indri Digital",
+    "kategori": "Usaha Teknologi dan Layanan Digital",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/wddHW9FyWVTqGvpy9"
+  },
+  {
+    "nama": "Percetakan Yoda",
+    "kategori": "Usaha Teknologi dan Layanan Digital",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/hdhPM8AwXaiBZfk49"
+  },
+  {
+    "nama": "Toko Harry Cell",
+    "kategori": "Usaha Teknologi dan Layanan Digital",
+    "deskripsi": "Jual pulsa",
+    "alamat": null,
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/TmBnhEPt1hScLDbG6"
+  },
+  {
+    "nama": "Toko Pulsa",
+    "kategori": "Usaha Teknologi dan Layanan Digital",
+    "deskripsi": "Jual pulsa",
+    "alamat": null,
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/4q8w11GduY5n7kgY9"
+  },
+  {
+    "nama": "Madon Rental Playstation 3 & 4",
+    "kategori": "Usaha Teknologi dan Layanan Digital",
+    "deskripsi": null,
+    "alamat": "Desa Rantau jaya Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/kyndMzpSEf4vR7xTA"
+  },
+  {
+    "nama": "Hendra Fotocopy",
+    "kategori": "Usaha Teknologi dan Layanan Digital",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/8SrJ98QG3uGsH85m7"
+  },
+  {
+    "nama": "Arham Cell",
+    "kategori": "Usaha Teknologi dan Layanan Digital",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/GTHThw9VPCJgZJoF6"
+  },
+  {
+    "nama": "Pelangi Fotocopy E-Bike",
+    "kategori": "Usaha Teknologi dan Layanan Digital",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/ZBo6eBU2cvSVdtHWA"
+  },
+  {
+    "nama": "Isi Ulang Putra dan Kost Yovia’s",
+    "kategori": "Perdagangan dan Kebutuhan Rumah Tangga",
+    "deskripsi": null,
+    "alamat": "Desa Rantau Jaya, RT.002/RW.003, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32363, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/WJFStjgQoyLpGGZH7"
+  },
+  {
+    "nama": "Toko Faisa",
+    "kategori": "Perdagangan dan Kebutuhan Rumah Tangga",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/E7LbtHeWEkj9WvZx9"
+  },
+  {
+    "nama": "Toko M.Toni",
+    "kategori": "Perdagangan dan Kebutuhan Rumah Tangga",
+    "deskripsi": null,
+    "alamat": "Jl. Pembangunan 1, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/LMyKGoyistSajFDQ8"
+  },
+  {
+    "nama": "Telur Bebek Bintang Rejeki Hidayat (BRH)",
+    "kategori": "Perdagangan dan Kebutuhan Rumah Tangga",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/CwYpwgtTBmgHhks46"
+  },
+  {
+    "nama": "Toko Sembako Jokowi",
+    "kategori": "Perdagangan dan Kebutuhan Rumah Tangga",
+    "deskripsi": null,
+    "alamat": "RT.002/RW.001, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/3SFqM7to5aLugRCWA"
+  },
+  {
+    "nama": "Warung Agus Salim",
+    "kategori": "Perdagangan dan Kebutuhan Rumah Tangga",
+    "deskripsi": null,
+    "alamat": "Jl. Swadaya, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/7rqdWcwVxsDZQGVe7"
+  },
+  {
+    "nama": "Warung Situmorang",
+    "kategori": "Perdagangan dan Kebutuhan Rumah Tangga",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/BTzd59BUDVbziMGR6"
+  },
+  {
+    "nama": "Toko Cahaya Enim",
+    "kategori": "Perdagangan dan Kebutuhan Rumah Tangga",
+    "deskripsi": null,
+    "alamat": null,
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/uYuc8NzCrq8rcEEg8"
+  },
+  {
+    "nama": "Toko Manisan Deru",
+    "kategori": "Perdagangan dan Kebutuhan Rumah Tangga",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/CoFhwoj2J7V7ZgUy5"
+  },
+  {
+    "nama": "Surya Galon",
+    "kategori": "Perdagangan dan Kebutuhan Rumah Tangga",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/2FaTicrzYGL9VkBq6"
+  },
+  {
+    "nama": "Surya Bordir Computer",
+    "kategori": "Jasa Profesional dan Perawatan diri",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/FTQhzEBeBXSthLLD7"
+  },
+  {
+    "nama": "Eyik Salon",
+    "kategori": "Jasa Profesional dan Perawatan diri",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/PqrKG8NxsfHpw2Nr7"
+  },
+  {
+    "nama": "Rumah Jahit Ayri",
+    "kategori": "Jasa Profesional dan Perawatan diri",
+    "deskripsi": null,
+    "alamat": "RT.01/RW.03, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/ELMb74836qDmPSCq9"
+  },
+  {
+    "nama": "Dewi Rajut",
+    "kategori": "Jasa Profesional dan Perawatan diri",
+    "deskripsi": "VJQP+HGF, Jl. Swadaya,",
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/Eh3nKZ6FmqYDGxeB8"
+  },
+  {
+    "nama": "Kbihu Ad Daud Hardeman",
+    "kategori": "Jasa Profesional dan Perawatan diri",
+    "deskripsi": "Biro Perjalanan dan wisata",
+    "alamat": "Jl. Swadaya, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/RC2vXwmfFLkLdpu77"
+  },
+  {
+    "nama": "Kantor Hukum Advokat/Pengacara Taufiqurrahman, RD., S.H dan Rekan",
+    "kategori": "Jasa Profesional dan Perawatan diri",
+    "deskripsi": null,
+    "alamat": "Jl. Pembangunan No.1, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/xgXtDqrrVxom8ibG7"
+  },
+  {
+    "nama": "Pangkas Rambut Bapak Ngasib",
+    "kategori": "Jasa Profesional dan Perawatan diri",
+    "deskripsi": null,
+    "alamat": null,
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/zCB2WwdZ11a9WHQb7"
+  },
+  {
+    "nama": "Kantor Hukum Advokat/Pengacara Irwan Zulmahbur, S.H dan Rekan",
+    "kategori": "Jasa Profesional dan Perawatan diri",
+    "deskripsi": null,
+    "alamat": null,
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/pabS3pHkUKNGKeY9A"
+  },
+  {
+    "nama": "Kantor Hukum Advokat/Pengacara Benny Arisman, S.H dan Rekan",
+    "kategori": "Jasa Profesional dan Perawatan diri",
+    "deskripsi": null,
+    "alamat": null,
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/UFdXgC7Tu2qjwSpR8"
+  },
+  {
+    "nama": "Tenda Naila",
+    "kategori": "Jasa untuk acara dan kebutuhan masyarakat",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/a7U98yt2GEXDkBvD6"
+  },
+  {
+    "nama": "Cindona Florist",
+    "kategori": "Jasa untuk acara dan kebutuhan masyarakat",
+    "deskripsi": null,
+    "alamat": "Jl. Swadaya No.104, RT.002/RW.001, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/xD8fLv7viZSCn9wKA"
+  },
+  {
+    "nama": "O.T Moreta",
+    "kategori": "Jasa untuk acara dan kebutuhan masyarakat",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/QKoM2cnpQ27ysGpYA"
+  },
+  {
+    "nama": "Bhoemiayoe Elok",
+    "kategori": "Pertanian",
+    "deskripsi": null,
+    "alamat": "Desa Rantau Jaya Kecamatan Belitang Madang Raya, Rantau Jaya, Kec. Belitang, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/68myMvrhGSLHWLes5"
+  },
+  {
+    "nama": "Jual Beras",
+    "kategori": "Pertanian",
+    "deskripsi": null,
+    "alamat": null,
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/8BuC4VKnN3smzSAW7"
+  },
+  {
+    "nama": "LPK D’Sakura Belitang",
+    "kategori": "Jasa Pendidikan dan Pelatihan",
+    "deskripsi": "Kursus bahasa jepang",
+    "alamat": "Jl. Ki Hajar Dewantara, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/cU5Utxcux7jNP8ne8"
+  },
+  {
+    "nama": "Sanggar Tari 4 Putri",
+    "kategori": "Jasa Pendidikan dan Pelatihan",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/xbXdYkV6HDpAR1zg6"
+  },
+  {
+    "nama": "LPK English Corner",
+    "kategori": "Jasa Pendidikan dan Pelatihan",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/Lq1Erv2mNsQPP3NU8"
+  },
+  {
+    "nama": "Bimbel Gemilang ( Calistung, Semua Mapel Sd, Mengaji, Juz Amma)",
+    "kategori": "Jasa Pendidikan dan Pelatihan",
+    "deskripsi": null,
+    "alamat": "Jl. Swadaya No.3, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/rzoGn52enx6ZTDPN7"
+  },
+  {
+    "nama": "Rumah Sunat Ahfadz",
+    "kategori": "Layanan Kesehatan",
+    "deskripsi": null,
+    "alamat": "Jl. Swadaya, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/jYrwiYegDs6cpUqTA"
+  },
+  {
+    "nama": "Bidan Eka Binawati MHU OKU",
+    "kategori": "Layanan Kesehatan",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/RE5Z4avR4g3d3xwc6"
+  },
+  {
+    "nama": "Klinik Sespriantini Andi",
+    "kategori": "Layanan Kesehatan",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/BWUWwVPTkyfVevDY9"
+  },
+  {
+    "nama": "Toko Obat Hewan dan Praktik Dokter Hewan",
+    "kategori": "Layanan Kesehatan",
+    "deskripsi": null,
+    "alamat": "Jl. Rantau Jaya, Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/7zmqFY5U66EAzvQz5"
+  },
+  {
+    "nama": "Klinik Bidan Risma Wahyuni",
+    "kategori": "Layanan Kesehatan",
+    "deskripsi": null,
+    "alamat": "Rantau Jaya, Kec. Belitang Madang Raya, Kabupaten Ogan Komering Ulu Timur, Sumatera Selatan 32382, Indonesia",
+    "whatsapp": null,
+    "maps_url": "https://maps.app.goo.gl/iKZmaSV38hurQ5Vx7"
+  }
+]

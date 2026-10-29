@@ -81,20 +81,22 @@ class AdminController extends Controller
     {
         $request->validate([
             'nama_produk' => 'required|string|max:255',
-            'harga' => 'required|integer',
-            'nama_penjual' => 'required|string|max:100',
-            'whatsapp' => 'required|string',
-            'deskripsi' => 'required|string',
+            'kategori' => 'required|string|max:100',
+            'alamat' => 'nullable|string|max:500',
+            'whatsapp' => 'nullable|string|max:20',
+            'maps_url' => 'nullable|url|max:500',
+            'deskripsi' => 'nullable|string',
         ]);
 
         Umkm::create([
             'nama_produk' => $request->nama_produk,
-            'harga' => $request->harga,
-            'nama_penjual' => $request->nama_penjual,
+            'kategori' => $request->kategori,
+            'alamat' => $request->alamat,
             'whatsapp' => $request->whatsapp,
+            'maps_url' => $request->maps_url,
             'deskripsi' => $request->deskripsi,
         ]);
 
-        return back()->with('sukses_umkm', 'Produk UMKM warga berhasil didaftarkan ke sistem Lapak Desa!');
+        return back()->with('sukses_umkm', 'Usaha UMKM warga berhasil didaftarkan ke direktori desa!');
     }
 }

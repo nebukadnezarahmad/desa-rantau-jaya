@@ -127,45 +127,36 @@
                 </div>
                 <p class="text-sm text-gray-500 mb-8 ml-4">Distribusi jumlah penduduk di area administrasi dusun.</p>
                 
+                @php
+                    $totalDusun = $statistik['dusun_1'] + $statistik['dusun_2'] + $statistik['dusun_3'] + $statistik['dusun_4'];
+                @endphp
+
                 <div class="space-y-6 ml-4">
-                    <div class="group/bar">
-                        <div class="flex justify-between text-sm font-semibold text-gray-700 mb-2">
-                            <span>Dusun I (Pusat)</span>
-                            <span>{{ $statistik['dusun_1'] }} Jiwa</span>
+                    @foreach ([
+                        ['label' => 'Dusun I', 'jumlah' => $statistik['dusun_1'], 'warna' => 'bg-emerald-600'],
+                        ['label' => 'Dusun II', 'jumlah' => $statistik['dusun_2'], 'warna' => 'bg-emerald-500'],
+                        ['label' => 'Dusun III', 'jumlah' => $statistik['dusun_3'], 'warna' => 'bg-emerald-400'],
+                        ['label' => 'Dusun IV', 'jumlah' => $statistik['dusun_4'], 'warna' => 'bg-emerald-300'],
+                    ] as $dusun)
+                        <div class="group/bar">
+                            <div class="flex justify-between text-sm font-semibold text-gray-700 mb-2">
+                                <span>{{ $dusun['label'] }}</span>
+                                <span>{{ number_format($dusun['jumlah'], 0, ',', '.') }} Jiwa</span>
+                            </div>
+                            <div class="w-full bg-gray-100 h-3 rounded-full overflow-hidden">
+                                <div class="{{ $dusun['warna'] }} h-full rounded-full animate-grow" style="width: {{ $totalDusun > 0 ? round($dusun['jumlah'] / $totalDusun * 100, 1) : 0 }}%; animation-delay: 0.8s;"></div>
+                            </div>
                         </div>
-                        <div class="w-full bg-gray-100 h-3 rounded-full overflow-hidden">
-                            <div class="bg-emerald-600 h-full rounded-full animate-grow" style="width: 35%; animation-delay: 0.8s;"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="group/bar">
-                        <div class="flex justify-between text-sm font-semibold text-gray-700 mb-2">
-                            <span>Dusun II (Sari Mulyo)</span>
-                            <span>{{ $statistik['dusun_2'] }} Jiwa</span>
-                        </div>
-                        <div class="w-full bg-gray-100 h-3 rounded-full overflow-hidden">
-                            <div class="bg-emerald-500 h-full rounded-full animate-grow" style="width: 33%; animation-delay: 0.9s;"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="group/bar">
-                        <div class="flex justify-between text-sm font-semibold text-gray-700 mb-2">
-                            <span>Dusun III (Maju Jaya)</span>
-                            <span>{{ $statistik['dusun_3'] }} Jiwa</span>
-                        </div>
-                        <div class="w-full bg-gray-100 h-3 rounded-full overflow-hidden">
-                            <div class="bg-emerald-400 h-full rounded-full animate-grow" style="width: 32%; animation-delay: 1.0s;"></div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
 
-            <!-- Info Tambahan Hak Pilih -->
+            <!-- Info Tambahan Wajib KTP -->
             <div class="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between animate-fade-up" style="animation-delay: 0.7s;">
                 <div>
                     <div class="flex items-center gap-3 mb-2">
                         <div class="w-1.5 h-6 bg-blue-600 rounded-full"></div>
-                        <h3 class="font-bold text-xl text-gray-800">Indikator Hak Pilih</h3>
+                        <h3 class="font-bold text-xl text-gray-800">Wajib KTP</h3>
                     </div>
                     <p class="text-sm text-gray-500 mb-8 ml-4">Data warga yang memiliki identitas kependudukan sah (Wajib KTP).</p>
                     
@@ -174,8 +165,8 @@
                             <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path></svg>
                         </div>
                         <div>
-                            <div class="text-3xl font-black text-gray-800 tracking-tight">{{ number_format($statistik['wajib_pilih'], 0, ',', '.') }}</div>
-                            <div class="text-xs font-bold text-blue-700 mt-1 uppercase tracking-wide">Penduduk Sah Memilih</div>
+                            <div class="text-3xl font-black text-gray-800 tracking-tight">{{ number_format($statistik['wajib_ktp'], 0, ',', '.') }}</div>
+                            <div class="text-xs font-bold text-blue-700 mt-1 uppercase tracking-wide">Wajib KTP</div>
                         </div>
                     </div>
                 </div>
